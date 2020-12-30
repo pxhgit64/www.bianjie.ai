@@ -17,8 +17,8 @@
 
 <style scoped lang="stylus">
 .icon{
-	width: 10rem;
-	height: 10rem;
+	width: 100%;
+	height: 100%;
 	vertical-align: -0.15em;
 	fill: currentColor;
 	overflow: hidden;

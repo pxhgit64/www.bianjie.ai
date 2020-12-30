@@ -75,10 +75,12 @@
 					grid-column-gap: 2rem
 					border 0.01rem solid $grayColor
 					border-radius 0.4rem !important
+					background $whiteColor
 					.swiper_advantage_list_item_description{
 						font-size $fontSize20
 						color $iconColor
-						font-weight $fontWight600
+						font-weight $fontWeight600
+						letter-spacing 0.1rem
 					}
 				}
 			}

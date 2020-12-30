@@ -4,8 +4,8 @@
 			<div class="swiper_home_left_content">
 				<h1 class="swiper_home_left_title" v-for="item in frontmatter('homeContent').title">{{item}}</h1>
 				<p class="swiper_home_subtitle">{{frontmatter('homeContent').subTitle}}</p>
-				<p class="swiper_description" v-for="value in frontmatter('homeContent').description">{{value}}</p>
-				<div class="about_us">{{frontmatter('homeContent').aboutUs}}</div>
+				<!--<p class="swiper_description" v-for="value in frontmatter('homeContent').description">{{value}}</p>
+				<div class="about_us">{{frontmatter('homeContent').aboutUs}}</div>-->
 			</div>
 			<div class="swiper_home_right_content">
 				<img :src="$withBase('/swiper_home_right.png')" alt="">
