@@ -1,0 +1,37 @@
+{
+  "id": "2291335",
+  "name": "Bianjiehome",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "19137141",
+      "name": "技术",
+      "font_class": "jishu",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "19137038",
+      "name": "生态",
+      "font_class": "shengtai",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "19137002",
+      "name": "服务",
+      "font_class": "fuwu",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "19028582",
+      "name": "chanpin",
+      "font_class": "chanpin",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    }
+  ]
+}

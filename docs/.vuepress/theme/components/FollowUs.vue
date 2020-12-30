@@ -58,5 +58,9 @@
 			
 		}
 	}
-
+@media (max-width: $MQMobile){
+	.follow_us_container{
+		display none
+	}
+}
 </style>
