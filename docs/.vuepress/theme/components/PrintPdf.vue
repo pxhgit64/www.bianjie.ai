@@ -30,4 +30,9 @@
 		}
 	}
 }
+	@media (max-width: $MQMobile){
+		.print_container{
+			display none
+		}
+	}
 </style>

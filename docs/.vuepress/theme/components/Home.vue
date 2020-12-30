@@ -3,7 +3,7 @@
     class="home"
     aria-labelledby="main-title"
   >
-    <header class="hero">
+   <!-- <header class="hero">
       <img
         v-if="data.heroImage"
         :src="$withBase(data.heroImage)"
@@ -33,7 +33,7 @@
           :item="actionLink"
         />
       </p>
-    </header>
+    </header>-->
 
     <div
       v-if="data.features && data.features.length"
@@ -67,7 +67,8 @@ export default {
   name: 'Home',
 
   components: { NavLink },
-
+  mounted(){
+  },
   computed: {
     data () {
       return this.$page.frontmatter

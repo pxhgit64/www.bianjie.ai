@@ -5,11 +5,11 @@
     @touchstart="onTouchStart"
     @touchend="onTouchEnd"
   >
-    <Navbar
+    <!--<Navbar
       v-if="shouldShowNavbar"
       @toggle-sidebar="toggleSidebar"
-    />
-
+    />-->
+    <navigation></navigation>
     <div
       class="sidebar-mask"
       @click="toggleSidebar(false)"
@@ -28,6 +28,8 @@
     </Sidebar>
 
     <Home v-if="$page.frontmatter.home" />
+    <about-us v-if="$page.frontmatter.isAboutUs"></about-us>
+    <New_home v-if="$page.frontmatter.isHome"></New_home>
     <Page
       v-else
       :sidebar-items="sidebarItems"
@@ -48,11 +50,17 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
+import AboutUs from "../components/AboutUs";
+import Navigation from "../components/Navigation";
+import New_home from "../components/NewHome";
 
 export default {
   name: 'Layout',
 
   components: {
+    New_home,
+    Navigation,
+    AboutUs,
     Home,
     Page,
     Sidebar,
@@ -115,6 +123,7 @@ export default {
   },
 
   mounted () {
+    console.log(this.$page)
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
     })
@@ -148,3 +157,9 @@ export default {
   }
 }
 </script>
+<style lang="stylus">
+  .theme-container{
+    width 100%
+    height: 100%
+  }
+</style>

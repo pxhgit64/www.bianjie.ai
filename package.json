@@ -1,5 +1,5 @@
 {
-  "name": "cls",
+  "name": "www.bianjie.ai",
   "version": "1.0.0",
   "description": "bianjie website",
   "main": "index.js",
@@ -20,7 +20,12 @@
   "homepage": "https://github.com/jinbiao-bianjie/www.bianjie.ai#readme",
   "devDependencies": {
     "cross-env": "^5.2.1",
-    "vuepress": "^1.7.1"
+    "vuepress": "^1.7.1",
+    "vue-swipe": "^2.4.0",
+    "vue-awesome-swiper": "^3.1.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "emailjs-com": "^2.6.4",
+    "vuex": "^3.6.0"
+  }
 }

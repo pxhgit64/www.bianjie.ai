@@ -1,3 +1,4 @@
+
 export default async ({
 	Vue,
 	options,
@@ -5,7 +6,15 @@ export default async ({
 	siteData,
 	isServer,
 }) => {
+	Vue.use(router)
 	if(!isServer){
-	
+		import('vuex').then(module => {
+			Vue.use(module)
+		})
+		await import('vue-awesome-swiper').then( module => {
+			Vue.use(module)
+		}).catch(e => {
+			console.log()
+		})
 	}
 }
