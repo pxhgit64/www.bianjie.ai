@@ -24,14 +24,10 @@
 		computed:{
 			frontmatter(){
 				return function (title) {
-					console.log(this.$page.frontmatter,"数据")
 					return this.$page.frontmatter[title]
 				}
 			}
 		},
-		mounted(){
-			console.log(this.$page,'我是首屏')
-		}
 	}
 </script>
 

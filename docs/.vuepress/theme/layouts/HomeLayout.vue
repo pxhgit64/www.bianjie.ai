@@ -16,10 +16,6 @@
 		methods:{
 		
 		},
-		mounted(){
-			console.log(this.$page)
-			console.log(this.$site)
-		},
 		computed:{
 			test(){
 				return function (params){

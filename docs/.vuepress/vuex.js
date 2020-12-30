@@ -7,7 +7,6 @@ const store = new Vuex.Store({
 	},
 	mutations: {
 		swiperIndex(state,data){
-			console.log(data)
 			state.swiperIndex = data
 		}
 	}

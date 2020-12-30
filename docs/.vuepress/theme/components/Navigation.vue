@@ -45,7 +45,6 @@
 		},
 		methods:{
 			swiperIndex(index) {
-				console.log(this.$route.path)
 				if(index){
 					if(this.$route.path !== '/'){
 						this.$router.push('/')
@@ -63,7 +62,6 @@
 				return this.navigation && this.navigation.length > 0 && this.navigation[this.navigation.length - 2].text
 			},
 			download(){
-				console.log(this.navigation.length)
 				return this.navigation && this.navigation.length > 0 && this.navigation[this.navigation.length - 1].text
 			}
 		}

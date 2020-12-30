@@ -96,7 +96,6 @@
 			}
 		},
 		mounted() {
-			console.log(this.$page.frontmatter)
 			/*let swiper = document.getElementsByClassName('mySwiper')[0];
 			if (swiper) {
 				swiper.style.alignItems = 'center';
@@ -104,8 +103,6 @@
 			
 			this.swiper.slideTo(store.state.swiperIndex -1, 1000, false);
 			// current swiper instance
-			// 然后你就可以使用当前上下文内的swiper对象去做你想做的事了
-			console.log("this is current swiper instance object", this.swiper);
 			this.swiperObj = this.swiper
 			// this.swiper.slideTo(3, 1000, false);
 		}
