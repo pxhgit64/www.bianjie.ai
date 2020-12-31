@@ -6,18 +6,25 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19140632",
+      "name": "产品-IRITA",
+      "font_class": "IRITA",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "19137160",
+      "name": "生态",
+      "font_class": "shengtai",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
       "icon_id": "19137141",
       "name": "技术",
       "font_class": "jishu",
       "unicode": "e63b",
       "unicode_decimal": 58939
-    },
-    {
-      "icon_id": "19137038",
-      "name": "生态",
-      "font_class": "shengtai",
-      "unicode": "e63a",
-      "unicode_decimal": 58938
     },
     {
       "icon_id": "19137002",

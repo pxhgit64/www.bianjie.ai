@@ -7,7 +7,9 @@
 			<swiper-slide>
 				<swiper-advantage></swiper-advantage>
 			</swiper-slide>
-			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 3</div></swiper-slide>
+			<swiper-slide>
+				<swiper-product></swiper-product>
+			</swiper-slide>
 			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 4</div></swiper-slide>
 			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 5</div></swiper-slide>
 			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 6</div></swiper-slide>
@@ -23,9 +25,11 @@
 	import store from "../../vuex";
 	import SwiperHome from "./SwiperHome";
 	import SwiperAdvantage from "./SwiperAdvantage";
+	import SwiperProduct from "./SwiperProduct";
 	export default {
 		name: "new_home",
 		components: {
+			SwiperProduct,
 			SwiperAdvantage,
 			SwiperHome,
 			swiper,
@@ -53,12 +57,6 @@
 						stopOnLastSlide: false,
 						disableOnInteraction: true
 					},*/
-					
-					// 箭头配置
-					navigation: {
-						nextEl: '.swiper-button-next',
-						prevEl: '.swiper-button-prev',
-					},
 					// 环状轮播
 					loop: false,
 					slidesPerView: 'auto',
@@ -96,15 +94,8 @@
 			}
 		},
 		mounted() {
-			/*let swiper = document.getElementsByClassName('mySwiper')[0];
-			if (swiper) {
-				swiper.style.alignItems = 'center';
-			}*/
-			
 			this.swiper.slideTo(store.state.swiperIndex -1, 1000, false);
-			// current swiper instance
 			this.swiperObj = this.swiper
-			// this.swiper.slideTo(3, 1000, false);
 		}
 	}
 </script>
