@@ -10,10 +10,16 @@
 			<swiper-slide>
 				<swiper-product></swiper-product>
 			</swiper-slide>
-			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 4</div></swiper-slide>
+			<swiper-slide>
+				<swiper-application></swiper-application>
+			</swiper-slide>
 			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 5</div></swiper-slide>
-			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 6</div></swiper-slide>
-			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 7</div></swiper-slide>
+			<swiper-slide>
+				<swiper-partners></swiper-partners>
+			</swiper-slide>
+			<swiper-slide>
+				<swiper-contact></swiper-contact>
+			</swiper-slide>
 		</swiper>
 		<div class="swiper-pagination"></div>
 	</div>
@@ -26,9 +32,15 @@
 	import SwiperHome from "./SwiperHome";
 	import SwiperAdvantage from "./SwiperAdvantage";
 	import SwiperProduct from "./SwiperProduct";
+	import SwiperApplication from "./SwiperApplication";
+	import SwiperContact from "./SwiperContact";
+	import SwiperPartners from "./SwiperPartner";
 	export default {
 		name: "new_home",
 		components: {
+			SwiperPartners,
+			SwiperContact,
+			SwiperApplication,
 			SwiperProduct,
 			SwiperAdvantage,
 			SwiperHome,

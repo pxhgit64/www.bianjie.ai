@@ -6,6 +6,76 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19167386",
+      "name": "咨询技术服务",
+      "font_class": "zixunjishu",
+      "unicode": "e64a",
+      "unicode_decimal": 58954
+    },
+    {
+      "icon_id": "19167332",
+      "name": "异构跨链",
+      "font_class": "yigoukualian",
+      "unicode": "e648",
+      "unicode_decimal": 58952
+    },
+    {
+      "icon_id": "19166971",
+      "name": "合作申请",
+      "font_class": "hezuoshenqing",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "19166934",
+      "name": "业务伙伴",
+      "font_class": "yewuhuoban",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    },
+    {
+      "icon_id": "19166874",
+      "name": "行业协作",
+      "font_class": "hangyexiezuo",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "19163120",
+      "name": "LOGO",
+      "font_class": "LOGO",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "19153517",
+      "name": "应用-跨链",
+      "font_class": "yingyong-kualian",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "19153491",
+      "name": "应用-隐私",
+      "font_class": "yingyong-yinsi",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "19153426",
+      "name": "应用-凭证",
+      "font_class": "yingyong-pingzheng",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "19148660",
+      "name": "IRITA OPB",
+      "font_class": "IRITA-OPB",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
       "icon_id": "19140632",
       "name": "产品-IRITA",
       "font_class": "IRITA",
