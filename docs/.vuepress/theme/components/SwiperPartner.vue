@@ -1,8 +1,9 @@
 <template>
 	<div class="swiper_partner_container">
 		<div class="swiper_partner_content_wrap">
-			<partner_tab_component @selectIndex="tabActiveIndex"></partner_tab_component>
-			<partner_img_component v-show="activeIndex !== 2 " :img-list="imgArray"></partner_img_component>
+			<partner_tab_component></partner_tab_component>
+			<partner_img_component v-show="$store.state.partnerActiveIndex !== 2 " :img-list="imgArray"></partner_img_component>
+			<cooperation-mail-component v-show="$store.state.partnerActiveIndex === 2 "></cooperation-mail-component>
 		</div>
 	</div>
 </template>
@@ -10,36 +11,28 @@
 <script>
 	import Partner_tab_component from "./PartnerTabComponent";
 	import Partner_img_component from "./PartnerImgCompontent";
+	import CooperationMailComponent from "./CooperationApplicationComponent";
 	export default {
 		name: "swiper-partners",
-		components: {Partner_img_component, Partner_tab_component},
+		components: {CooperationMailComponent, Partner_img_component, Partner_tab_component},
 		data(){
 			return {
-				activeIndex:0,
 				imgListData:null,
 				imgArray: []
 			}
 		},
-		methods:{
-			tabActiveIndex(index){
-				this.activeIndex = index
-				console.log(this.imgList)
-			}
-		},
 		watch:{
-			activeIndex(index){
-				console.log(index,"??????????????????????????????????????????????????????????????????")
+			'$store.state.partnerActiveIndex'(){
 				this.imgArray = []
-				if(index){
-					this.imgArray = this.imgListData.IndustryCollaborationImgList
+				if(this.$store.state.partnerActiveIndex){
+					this.imgArray = this.$page.frontmatter.partnerContent.IndustryCollaborationImgList
 				}else {
-					this.imgArray = this.imgListData.businessPartnersImgList
+					this.imgArray = this.$page.frontmatter.partnerContent.businessPartnersImgList
 				}
-				console.log(this.imgArray,"??????????????????????????????????????????????????????????????????")
 			}
 		},
 		mounted(){
-			if(this.activeIndex){
+			if(this.$store.state.partnerActiveIndex){
 				this.imgArray = this.$page.frontmatter.partnerContent.IndustryCollaborationImgList
 			}else {
 				this.imgArray = this.$page.frontmatter.partnerContent.businessPartnersImgList
@@ -48,7 +41,7 @@
 		computed:{
 			imgList(){
 				this.imgListData = this.$page.frontmatter.partnerContent
-				return this.$page.frontmatter.partnerContent
+				return
 			}
 		}
 	}

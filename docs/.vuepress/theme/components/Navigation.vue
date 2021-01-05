@@ -25,14 +25,12 @@
 		<div class="navigation_right_content">
 			<div  class="navigation_right_content_item">{{developer}}</div>
 			<span class="line"></span>
-			<div class="navigation_right_content_item">{{download}}</div>
+			<RouterLink class="navigation_right_content_item" :to="'/download'" target="_blank" rel="noreferrer noopener"><div >{{download}}</div></RouterLink>
 		</div>
 	</div>
 </template>
 
 <script>
-	import store from "../../vuex";
-	
 	export default {
 		name: "navigation",
 		data(){
@@ -50,8 +48,7 @@
 						this.$router.push('/')
 					}
 				}
-		
-				store.commit('swiperIndex',index)
+				this.$store.commit('swiperIndex',index)
 			}
 		},
 		computed:{
@@ -152,11 +149,13 @@
 			align-items center
 			background $buttonColor
 			.navigation_right_content_item{
+				display inline-block
 				width 10rem
 				height 6rem
 				text-align center
 				line-height 6rem
 				cursor pointer
+				color $whiteColor
 			}
 			.line{
 				display inline-block

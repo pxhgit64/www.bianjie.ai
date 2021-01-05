@@ -6,11 +6,60 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "19167386",
+      "icon_id": "19208016",
+      "name": "失败",
+      "font_class": "shibai",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "19207608",
+      "name": "箭头",
+      "font_class": "jiantou",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "19206268",
+      "name": "传染病预警",
+      "font_class": "chuanranbingyujing",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "19206232",
+      "name": "电子处方",
+      "font_class": "dianzichufang",
+      "unicode": "e64f",
+      "unicode_decimal": 58959
+    },
+    {
+      "icon_id": "19206212",
+      "name": "金融监管",
+      "font_class": "jinrongjianguan",
+      "unicode": "e64e",
+      "unicode_decimal": 58958
+    },
+    {
+      "icon_id": "19206203",
+      "name": "供应链",
+      "font_class": "gongyinglian",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "19174404",
+      "name": "发送成功",
+      "font_class": "fasongchenggong",
+      "unicode": "e64c",
+      "unicode_decimal": 58956
+    },
+    {
+      "icon_id": "19172437",
       "name": "咨询技术服务",
-      "font_class": "zixunjishu",
-      "unicode": "e64a",
-      "unicode_decimal": 58954
+      "font_class": "zixunfuwu",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
     },
     {
       "icon_id": "19167332",

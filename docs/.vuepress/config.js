@@ -32,7 +32,7 @@ module.exports = {
 					{text:'资讯',link:'/news',index:5},
 					{text:'伙伴',link:'/partner',index:6},
 					{text:'联系',link:'/contact',index:7},
-					{text:'关于',link:'/'},
+					{text:'关于',link:'/a'},
 					{text:'开发者',link:'/developer',isRight: true},
 					{text:'资源下载',link:'/download',isRight: true},
 				]

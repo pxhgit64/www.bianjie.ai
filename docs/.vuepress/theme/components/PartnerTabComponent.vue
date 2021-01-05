@@ -4,11 +4,11 @@
 		     v-for="(item,index) in tabData"
 		     :key="index">
 			<div class="partner_tab_icon_content">
-				<div class="partner_icon_content" :style="{visibility: activeIndex === index ? 'visible' : 'hidden'}">
+				<div class="partner_icon_content" :style="{visibility: $store.state.partnerActiveIndex === index ? 'visible' : 'hidden'}">
 					<icon-component :icon-name="item.iconName"></icon-component>
 				</div>
 				<span class="partner_tab_label"
-				      :class="activeIndex === index ? 'active_style' : ''"
+				      :class="$store.state.partnerActiveIndex === index ? 'active_style' : ''"
 				      @click="selectTabOption(index)">{{item.label}}</span>
 			</div>
 		</div>
@@ -22,13 +22,12 @@
 		components: {IconComponent},
 		data(){
 			return {
-				activeIndex: 0
 			}
 		},
 		methods:{
 			selectTabOption(index){
-				this.activeIndex = index
 				this.$emit('selectIndex',index)
+				this.$store.commit('partnerActiveIndex',index)
 			}
 		},
 		computed:{

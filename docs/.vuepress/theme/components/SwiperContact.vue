@@ -10,7 +10,7 @@
 					<span class="contact_mail">{{contactData.mail}}</span>
 				</p>
 				<div class="button_content">
-					<span class="cooperation_button">{{contactData.cooperationButtonLabel}}</span>
+					<span class="cooperation_button" @click="cooperation()">{{contactData.cooperationButtonLabel}}</span>
 					<span class="join_button">{{contactData.joinUsButtonLabel}}</span>
 				</div>
 			</div>
@@ -21,17 +21,25 @@
 				</div>
 			</div>
 		</div>
+		<bottom-footer></bottom-footer>
 	</div>
 </template>
 
 <script>
 	import IconComponent from "./SvgIconComponent";
+	import BottomFooter from "./Footer";
 	export default {
 		name: "swiper-contact",
-		components: {IconComponent},
+		components: {BottomFooter, IconComponent},
 		computed:{
 			contactData () {
 				return this.$page.frontmatter.contactContent
+			}
+		},
+		methods:{
+			cooperation(){
+				this.$store.commit('swiperIndex',6)
+				this.$store.commit('partnerActiveIndex',2)
 			}
 		}
 	}
@@ -43,6 +51,7 @@
 		height 100%
 		background url("../../public/swiper_home.png")
 		background-size cover
+		position relative
 		.swiper_contact_content_wrap{
 			max-width 120rem
 			height 100%
@@ -76,6 +85,7 @@
 						color $whiteColor
 						padding 0.4rem 0.8rem
 						border-radius 0.2rem
+						cursor pointer
 					}
 					.join_button{
 						margin-left 1.2rem

@@ -28,7 +28,6 @@
 		},
 		watch:{
 			imgList(imgArray){
-				console.log(imgArray,'?>>>>>>>>>>>>>>>>>>>>>>>>>>>')
 				if(imgArray && imgArray.length) this.imgArr = imgArray
 			}
 		}
