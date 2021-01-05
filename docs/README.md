@@ -1,5 +1,6 @@
 ---
 {
+    layout: Layout,
     isHome: true,
     homeContent: {
         title: [技术无疆,链动未来],
@@ -51,7 +52,7 @@
                 moreLink: /,
             },
             {
-                iconName: iconzixunjishu,
+                iconName: iconzixunfuwu,
                 title: 咨询和技术服务,
                 content: 基于全球领先的区块链和大数据综合技术集成能力，为企业业务场景制定定制化解决方案和技术实施。,
                 more: 更多,
@@ -81,7 +82,230 @@
                 }
             ]
         },
-        solution: [供应链金融,金融监管,电子处方管理,传染病预防],
+        solution: {
+            title: 解决方案,
+            list: [
+                {
+                    iconName: icongongyinglian,
+                    content: 供应链金融
+                },
+                {
+                    iconName: iconjinrongjianguan,
+                    content: 金融监管
+                },
+                {
+                    iconName: icondianzichufang,
+                    content: 电子处方管理
+                },
+                {
+                    iconName: iconchuanranbingyujing,
+                    content: 传染病预警
+                }
+            ],
+        }
+    },
+    newsContent:{
+        title: 动态资讯,
+        list: [
+            {
+                imageName:a1,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:2,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:3,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:4,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:5,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:6,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:7,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:8,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:9,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:10,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:11,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:12,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:13,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:14,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:15,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:16,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:17,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:18,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:19,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:20,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:21,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:22,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:23,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:24,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:25,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:26,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:27,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:28,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:29,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:30,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:31,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:32,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+            {
+                imageName:33,
+                title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
+                date: Nov 9 2020,
+                content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。
+            },
+        ]
     },
     partnerContent:{
         partnerTab:[
@@ -198,11 +422,22 @@
             userName: 姓名,
             company: 公司 / 组织,
             mail: 邮箱,
-            telephone: 联系电话,
+            telephone: 手机号,
             cooperationContent: 合作需求,
+            submitButtonLabel: 提交,
             submitSuccess: 提交成功,
+            submitFailed: 提交失败,
+            againSubmit: 请重新提交,
+            successIconName: iconfasongchenggong,
+            failedIconName: iconshibai,
             successText: 我们会尽快与您联系,
-            thanks: 谢谢
+            thanks: 谢谢,
+            warningText:{
+                userNameWarning: 请输入姓名,
+                companyWarning: 请输入公司名称或组织,
+                mailWarning: 请输入您的邮箱,
+                telephoneWarning: 请输入您的手机号
+            },
         }
     },
     contactContent:{

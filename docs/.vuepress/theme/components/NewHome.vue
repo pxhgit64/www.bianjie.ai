@@ -13,7 +13,9 @@
 			<swiper-slide>
 				<swiper-application></swiper-application>
 			</swiper-slide>
-			<swiper-slide><div style="text-align:center;width:100%;height: 100%;color: red">Slide 5</div></swiper-slide>
+			<swiper-slide>
+				<swiper-news></swiper-news>
+			</swiper-slide>
 			<swiper-slide>
 				<swiper-partners></swiper-partners>
 			</swiper-slide>
@@ -35,6 +37,7 @@
 	import SwiperApplication from "./SwiperApplication";
 	import SwiperContact from "./SwiperContact";
 	import SwiperPartners from "./SwiperPartner";
+	import SwiperNews from "./SwiperNews";
 	export default {
 		name: "new_home",
 		components: {
@@ -45,6 +48,7 @@
 			SwiperAdvantage,
 			SwiperHome,
 			swiper,
+			SwiperNews,
 			swiperSlide
 		},
 		data () {
@@ -115,8 +119,7 @@
 <style scoped lang="stylus">
 	#certify {
 		width 100%
-		top 6rem
-		height calc(100% - 6rem)
+		height 100%
 		/deep/.swiper-container {
 			height  100%
 		}

@@ -1,4 +1,4 @@
-
+import 'element-ui/lib/theme-chalk/index.css'
 export default async ({
 	Vue,
 	options,
@@ -14,7 +14,17 @@ export default async ({
 		await import('vue-awesome-swiper').then( module => {
 			Vue.use(module)
 		}).catch(e => {
-			console.log()
+			console.log(e)
+		})
+		await import('element-ui').then(module => {
+			Vue.use(module.default)
+		}).catch(e => {
+			console.log(e)
+		})
+		await import('vue-line-clamp').then(module => {
+			Vue.use(module)
+		}).catch(e => {
+			console.log(e)
 		})
 	}
 }
