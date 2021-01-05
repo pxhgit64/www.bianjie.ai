@@ -171,7 +171,7 @@
 				.list_arrow_content{
 					border-color $buttonColor
 					.item_content{
-						color $buttonColor
+						color $iconColor
 					}
 					.iconjiantou{
 						color $buttonColor
@@ -189,7 +189,7 @@
 				.list_arrow_content{
 					border-color $grayColor
 					.item_content{
-						color $grayColor
+						color $iconColor
 					}
 					.iconjiantou{
 						color $grayColor
@@ -207,7 +207,7 @@
 				.list_arrow_content{
 					border-color $yellowColor
 					.item_content{
-						color $yellowColor
+						color $iconColor
 					}
 					.iconjiantou{
 						color $yellowColor

@@ -12,7 +12,6 @@
 						<product_swiper_component :product-data="item"></product_swiper_component>
 					</swiper-slide>
 				</swiper>
-				<div class="swiper-pagination" style="display: none"></div>
 				<div class="swiper-button-prev product_swiper_prev_button"></div>
 				<div class="swiper-button-next product_swiper_next_button"></div>
 				<div class="product_tab_content">

@@ -3,7 +3,7 @@
 		<a class="news_item_content_wrap" :href="newsItem.link" target="_blank" rel="noreferrer noopener">
 			<div class="news_item_content">
 				<div class="news_item_img_content">
-					<img :src="$withBase(`/news/arrow_left.png`)"  alt="">
+					<img v-show="newsItem.imageName" :src="$withBase(`/news/${newsItem.imageName}`)"  alt="">
 				</div>
 				<div class="news_container">
 					<h2 class="news_title">{{newsItem.title}}</h2>
@@ -23,9 +23,6 @@
 				type:Object
 			}
 		},
-		mounted(){
-			console.log(this,"????")
-		}
 	}
 </script>
 
@@ -46,11 +43,10 @@
 					height 11.2rem
 					box-sizing border-box
 					display flex
-					align-content center
 					justify-content center
+					align-items center
 					img{
 						width 100%
-						height 100%
 					}
 				}
 			}

@@ -28,9 +28,7 @@
 </template>
 
 <script>
-	// import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	import 'swiper/dist/css/swiper.min.css'
-	// import store from "../../vuex";
 	import SwiperHome from "./SwiperHome";
 	import SwiperAdvantage from "./SwiperAdvantage";
 	import SwiperProduct from "./SwiperProduct";
@@ -47,9 +45,7 @@
 			SwiperProduct,
 			SwiperAdvantage,
 			SwiperHome,
-			// swiper,
 			SwiperNews,
-			// swiperSlide
 		},
 		data () {
 			return {
@@ -84,7 +80,8 @@
 					// 修改swiper自己或子元素时，自动初始化swiper
 					observer: true,
 					// 修改swiper的父元素时，自动初始化swiper
-					observeParents: true
+					observeParents: true,
+					// 箭头配置
 				}
 			}
 		},
@@ -97,20 +94,23 @@
 			}
 		},
 		watch:{
-			'swiperObj.activeIndex':function(currentIndex){
+			'swiperObj.activeIndex'(currentIndex){
+				this.swiper.allowSlidePrev = true
+				this.swiper.allowSlideNext = true
 				if(currentIndex === 0){
 					this.swiper.allowSlidePrev = false
-				}else {
-					this.swiper.allowSlidePrev = true
+				}
+				if(currentIndex === 6) {
+					this.$store.commit('swiperIndex',currentIndex +1)
+					this.swiper.allowSlideNext = false
 				}
 			},
-			swiperIndex:function(newValue,oldValue){
-				
+			swiperIndex(newValue,oldValue){
 				this.swiper.slideTo(newValue -1, 1000, false);
-			}
+			},
 		},
 		mounted() {
-			this.swiper.slideTo(this.$store.state.swiperIndex -1, 1000, false);
+			this.swiper.slideTo( this.$store.state.swiperIndex ? this.$store.state.swiperIndex -1 : 0, 1000, false);
 			this.swiperObj = this.swiper
 		}
 	}
@@ -135,7 +135,7 @@
 			/deep/.swiper-pagination-bullet {
 				margin 0.2rem 0
 				display block
-				background $whiteColor
+				background $buttonColor
 			}
 		}
 	}
