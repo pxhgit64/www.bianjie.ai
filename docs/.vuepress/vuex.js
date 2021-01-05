@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-
-const store = new Vuex.Store({
+Vue.use(Vuex);
+export default new Vuex.Store({
 	state: {
 		swiperIndex: 0
 	},
@@ -11,4 +11,3 @@ const store = new Vuex.Store({
 		}
 	}
 })
-export default store

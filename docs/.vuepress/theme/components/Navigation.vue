@@ -31,8 +31,6 @@
 </template>
 
 <script>
-	import store from "../../vuex";
-	
 	export default {
 		name: "navigation",
 		data(){
@@ -50,8 +48,7 @@
 						this.$router.push('/')
 					}
 				}
-		
-				store.commit('swiperIndex',index)
+				this.$store.commit('swiperIndex',index)
 			}
 		},
 		computed:{

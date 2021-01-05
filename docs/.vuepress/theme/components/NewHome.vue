@@ -28,9 +28,9 @@
 </template>
 
 <script>
-	import { swiper, swiperSlide } from 'vue-awesome-swiper'
+	// import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	import 'swiper/dist/css/swiper.min.css'
-	import store from "../../vuex";
+	// import store from "../../vuex";
 	import SwiperHome from "./SwiperHome";
 	import SwiperAdvantage from "./SwiperAdvantage";
 	import SwiperProduct from "./SwiperProduct";
@@ -47,9 +47,9 @@
 			SwiperProduct,
 			SwiperAdvantage,
 			SwiperHome,
-			swiper,
+			// swiper,
 			SwiperNews,
-			swiperSlide
+			// swiperSlide
 		},
 		data () {
 			return {
@@ -93,7 +93,7 @@
 				return this.$refs.mySwiper.swiper;
 			},
 			swiperIndex(){
-				return store.state.swiperIndex;
+				return this.$store.state.swiperIndex;
 			}
 		},
 		watch:{
@@ -110,7 +110,7 @@
 			}
 		},
 		mounted() {
-			this.swiper.slideTo(store.state.swiperIndex -1, 1000, false);
+			this.swiper.slideTo(this.$store.state.swiperIndex -1, 1000, false);
 			this.swiperObj = this.swiper
 		}
 	}

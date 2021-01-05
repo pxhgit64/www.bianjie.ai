@@ -34,14 +34,11 @@
 </template>
 
 <script>
-	import { swiper, swiperSlide } from 'vue-awesome-swiper'
 	import Product_swiper_component from "./ProductSwiperComponent";
 	export default {
 		name: "swiper-product",
 		components: {
 			Product_swiper_component,
-			swiper,
-			swiperSlide
 		},
 		data () {
 			return {

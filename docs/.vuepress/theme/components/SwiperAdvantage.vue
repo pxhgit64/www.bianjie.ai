@@ -17,7 +17,6 @@
 </template>
 
 <script>
-	import "../../public/iconfont/iconfont"
 	import IconComponent from "./SvgIconComponent";
 	export default {
 		name: "swiper-advantage",
