@@ -138,7 +138,6 @@
 			}
 			.product_tab_content{
 				box-sizing border-box
-				color #3c763d
 				padding-top 0.9rem
 				background $whiteColor
 				.product_tab_content_wrap{

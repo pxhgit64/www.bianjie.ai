@@ -64,6 +64,7 @@
 	background-size cover
 	width 100%
 	height 100%
+	padding-top 8rem
 	.swiper_application_content_wrap{
 		max-width 120rem
 		margin 0 auto
@@ -79,6 +80,7 @@
 				text-align center
 				color $fontColor
 				max-width 52.8rem
+				line-height 1
 			}
 			.swiper_application_scenarios_list_item{
 				margin-top 6.8rem
@@ -107,10 +109,11 @@
 		
 		.swiper_solution_content{
 			.swiper_application_solution_title{
+				max-width 36.6rem
 				color $fontColor
 				font-size $fontSize30
 				letter-spacing 0.5rem
-				line-height 2.8rem
+				text-align center
 			}
 			.swiper_application_solution_list_content{
 				display flex
@@ -118,10 +121,10 @@
 				margin-bottom 2.1rem
 				.list_icon_content{
 					width 12rem
-					height 10.6rem
+					height 8rem
 					margin-top 2.1rem
 					box-sizing border-box
-					padding 2.6rem
+					padding 1.2rem 1.8rem
 				}
 				.list_icon_content:first-child{
 					margin-top 0
@@ -139,7 +142,7 @@
 					width 26.6rem
 					.item_content{
 						display inline-block
-						padding 1.4rem 7.5rem 1.4rem 1.8rem
+						padding 1.4rem 4.3rem 1.4rem 1.8rem
 						letter-spacing 0.4rem
 						line-height 2rem
 					}
@@ -211,6 +214,25 @@
 					}
 					.iconjiantou{
 						color $yellowColor
+						font-size $fontSize20
+						position absolute
+						right 2rem
+						top 1.2rem
+					}
+					
+				}
+			}
+			.swiper_application_solution_list_content:nth-of-type(5){
+				.list_icon_content{
+					background $navigationBgColor
+				}
+				.list_arrow_content{
+					border-color $navigationBgColor
+					.item_content{
+						color $iconColor
+					}
+					.iconjiantou{
+						color $navigationBgColor
 						font-size $fontSize20
 						position absolute
 						right 2rem

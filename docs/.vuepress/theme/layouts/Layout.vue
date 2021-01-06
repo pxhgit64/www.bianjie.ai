@@ -28,9 +28,9 @@
     </Sidebar>
 
     <Home v-if="$page.frontmatter.home" />
-    <about-us v-if="$page.frontmatter.isAboutUs"></about-us>
+    <about-us v-if="$page.frontmatter.isAbout"></about-us>
     <New_home v-if="$page.frontmatter.isHome"></New_home>
-    <Page
+    <!--<Page
       v-else
       :sidebar-items="sidebarItems"
     >
@@ -40,7 +40,7 @@
       <template #bottom>
         <slot name="page-bottom" />
       </template>
-    </Page>
+    </Page>-->
   </div>
 </template>
 
@@ -50,7 +50,7 @@ import Navbar from '@theme/components/Navbar.vue'
 import Page from '@theme/components/Page.vue'
 import Sidebar from '@theme/components/Sidebar.vue'
 import { resolveSidebarItems } from '../util'
-import AboutUs from "../components/AboutUs";
+import AboutUs from "../components/About";
 import Navigation from "../components/Navigation";
 import New_home from "../components/NewHome";
 

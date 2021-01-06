@@ -6,6 +6,20 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19238558",
+      "name": "时间轴点",
+      "font_class": "shijianzhoudian",
+      "unicode": "e654",
+      "unicode_decimal": 58964
+    },
+    {
+      "icon_id": "19227895",
+      "name": "反洗钱",
+      "font_class": "fanxiqian",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
       "icon_id": "19208016",
       "name": "失败",
       "font_class": "shibai",

@@ -61,6 +61,7 @@
 	import IconComponent from "./SvgIconComponent";
 	import emailjs  from 'emailjs-com'
 	import {successTipTime} from "../constant";
+	import config from "../../config.json"
 	export default {
 		name: "cooperation-mail-component",
 		components: {IconComponent},
@@ -103,6 +104,7 @@
 		},
 		methods:{
 			submitApply(){
+				console.log(config,'配置参数')
 				let templateParams = {
 					userName: this.userName,
 					companyName: this.companyName,

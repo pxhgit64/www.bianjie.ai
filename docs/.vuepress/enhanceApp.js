@@ -1,4 +1,5 @@
 import 'element-ui/lib/theme-chalk/index.css'
+import 'overlayscrollbars/css/OverlayScrollbars.css'
 import Vuex from 'vuex'
 import store from './vuex'
 export default async ({
@@ -26,8 +27,13 @@ export default async ({
 		})
 		await import('vue-line-clamp').then(module => {
 			Vue.use(module)
-		}).catch(e => {
+		}).catch(e => {e
 			console.log(e)
+		})
+		await import('overlayscrollbars-vue').then(module => {
+			Vue.use(module.OverlayScrollbarsPlugin)
+		}).catch(e => {
+			console.log()
 		})
 	}
 }
