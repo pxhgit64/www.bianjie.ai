@@ -95,11 +95,15 @@
                 },
                 {
                     iconName: icondianzichufang,
-                    content: 电子处方管理
+                    content: 医疗电子处方管理
                 },
                 {
                     iconName: iconchuanranbingyujing,
-                    content: 传染病预警
+                    content: 传染病预警与监控
+                },
+                {
+                    iconName: iconfanxiqian,
+                    content: 加密货币反洗钱
                 }
             ],
         }

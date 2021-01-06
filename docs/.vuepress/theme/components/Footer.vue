@@ -20,9 +20,6 @@
 			
 			}
 		},
-		mounted(){
-			console.log('执行测试')
-		}
 	}
 </script>
 
