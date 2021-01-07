@@ -1,6 +1,6 @@
 <template>
 	<div class="cooperation_application_container">
-		<div v-if="!isSubmit" class="cooperation_application_content_wrap">
+		<div v-show="!isSubmit" class="cooperation_application_content_wrap">
 			<div class="cooperation_ipt_content">
 				<span class="cooperation_ipt_label">{{cooperationLabelData.userName}}:</span>
 				<el-input :class="flShowUserNameWarning ? 'warning_style' : ''"
@@ -46,7 +46,7 @@
 					{{cooperationLabelData.submitButtonLabel}}</el-button>
 			</div>
 		</div>
-		<div v-if="isSubmit" class="cooperation_application_submit_success_content">
+		<div v-show="isSubmit" class="cooperation_application_submit_success_content">
 			<div class="cooperation_submit_success_img_content">
 				<icon-component :icon-name=" flSubmitSuccess ? cooperationLabelData.successIconName : cooperationLabelData.failedIconName "></icon-component>
 			</div>
@@ -104,7 +104,6 @@
 		},
 		methods:{
 			submitApply(){
-				console.log(config,'配置参数')
 				let templateParams = {
 					userName: this.userName,
 					companyName: this.companyName,

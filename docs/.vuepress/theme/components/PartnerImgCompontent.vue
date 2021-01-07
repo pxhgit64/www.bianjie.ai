@@ -4,10 +4,10 @@
 			<li class="partner_img_item"
 			    v-for="(item,index) in imgArr"
 			    :key="index">
-				<a v-if="item.link" :href="item.link" target="_blank" rel="noreferrer noopener">
+				<a v-show="item.link" :href="item.link" target="_blank" rel="noreferrer noopener">
 					<img :src="$withBase(`/${item.imageName}`)" alt="">
 				</a>
-				<img v-else :src="$withBase(`/${item.imageName}`)" alt="">
+				<img v-show="!item.link" :src="$withBase(`/${item.imageName}`)" alt="">
 			</li>
 		</ul>
 	</div>
@@ -28,6 +28,7 @@
 		},
 		watch:{
 			imgList(imgArray){
+				console.log(imgArray)
 				if(imgArray && imgArray.length) this.imgArr = imgArray
 			}
 		}

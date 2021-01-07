@@ -34,7 +34,7 @@
 				total: 0
 			}
 		},
-		mounted(){
+		created(){
 			this.total = this.$page.frontmatter.newsContent.list.length
 			this.newsListData  = this.pageNation(this.$page.frontmatter.newsContent.list)
 			this.currentPageData = this.newsListData[this.pageNum - 1]

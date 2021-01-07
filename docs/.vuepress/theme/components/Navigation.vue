@@ -8,14 +8,14 @@
 				<ul class="navigation_list_container">
 					<li class="navigation_list_item"
 					    v-for="(item,index) in navigationList"
-					    v-if="!item.isRight"
+					    v-show="!item.isRight"
 					    :key="index"
 					    @click="swiperIndex(item.index)">
 						<span v-show="item.index">{{item.text}}</span>
 						<router-link v-show="!item.index" :to="item.link">{{item.text}}</router-link>
 						<ul v-show="item.items && item.items.length > 0" class="sub_menu">
-							<li class="sub_menu_item" v-for="v in item.items ">
-								<router-link :to="v.link">{{v.text}}</router-link>
+							<li class="sub_menu_item" v-for="v in item.items">
+								<span @click.stop="toPage(v.link)" >{{v.text}}</span>
 							</li>
 						</ul>
 					</li>
@@ -38,8 +38,8 @@
 				navigation:[],
 			}
 		},
-		mounted(){
-			this.navigation = this.$site.themeConfig.locales['/'].nav
+		created(){
+			this.navigation = this.$site.themeConfig.nav
 		},
 		methods:{
 			swiperIndex(index) {
@@ -49,6 +49,9 @@
 					}
 				}
 				this.$store.commit('swiperIndex',index)
+			},
+			toPage(path){
+				this.$router.push(path)
 			}
 		},
 		computed:{
@@ -119,6 +122,7 @@
 							}
 						}
 						.sub_menu{
+							z-index 100
 							display none
 							position absolute
 							top 6rem
@@ -127,14 +131,15 @@
 							box-sizing border-box
 							padding 1.2rem 0
 							border-radius 0 0 0.2rem 0.2rem
+							border 0.1rem solid $grayColor
 							.sub_menu_item{
 								line-height 1
 								padding 0.5rem 1.2rem
 								white-space nowrap
-								a{
+								span{
 									color $fontColor
 								}
-								a:hover{
+								span:hover{
 									color $buttonColor
 								}
 							}
