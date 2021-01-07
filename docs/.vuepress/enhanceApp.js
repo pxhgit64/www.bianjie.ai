@@ -13,27 +13,27 @@ export default async ({
 	Vue.use(Vuex)
 	Vue.mixin({ store: store });
 	if(!isServer){
-		import("./public/iconfont/iconfont").then(module => {
+		await import("./public/iconfont/iconfont").then(module => {
 		})
 		await import('vue-awesome-swiper').then( module => {
-			Vue.use(module)
+			Vue.use(module.default)
 		}).catch(e => {
-			console.log(e)
+			console.log(e,'vue-awesome-swiper error')
 		})
 		await import('element-ui').then(module => {
 			Vue.use(module.default)
 		}).catch(e => {
-			console.log(e)
+			console.log(e,'element-ui error ')
 		})
 		await import('vue-line-clamp').then(module => {
 			Vue.use(module)
-		}).catch(e => {e
-			console.log(e)
+		}).catch(e => {
+			console.log(e,'vue-line-clamp error')
 		})
 		await import('overlayscrollbars-vue').then(module => {
 			Vue.use(module.OverlayScrollbarsPlugin)
 		}).catch(e => {
-			console.log()
+			console.log(e,'overlayscrollbars-vue error')
 		})
 	}
 }

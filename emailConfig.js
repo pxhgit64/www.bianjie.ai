@@ -20,7 +20,6 @@ replaceEnv([
 
 
 function replaceEnv(files, params) {
-	console.log(params,"????")
 	files.forEach(function(file,index){
 		let result = fs.readFileSync(file).toString();
 		for (let key in params) {

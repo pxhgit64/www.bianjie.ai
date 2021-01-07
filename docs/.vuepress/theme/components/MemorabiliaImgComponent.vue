@@ -65,8 +65,8 @@
 				swiperObj:null,
 			}
 		},
-		mounted(){
-			this.swiperObj = this.swiper
+		created(){
+			// this.swiperObj = this.swiper
 		},
 		computed: {
 			swiper() {

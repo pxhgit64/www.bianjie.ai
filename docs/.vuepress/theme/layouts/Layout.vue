@@ -30,6 +30,13 @@
     <Home v-if="$page.frontmatter.home" />
     <about-us v-if="$page.frontmatter.isAbout"></about-us>
     <New_home v-if="$page.frontmatter.isHome"></New_home>
+    <irita-page v-if="$page.frontmatter.isIrita"></irita-page>
+    <iritahub_page v-if="$page.frontmatter.isIritaHub"></iritahub_page>
+    <supply-page v-if="$page.frontmatter.isSupply"></supply-page>
+    <finance-page v-if="$page.frontmatter.isFinance"></finance-page>
+    <medical-page v-if="$page.frontmatter.isMedical"></medical-page>
+    <infectious-page v-if="$page.frontmatter.isInfectious"></infectious-page>
+    <crypto-currency-page v-if="$page.frontmatter.isCryptoCurrency"></crypto-currency-page>
     <!--<Page
       v-else
       :sidebar-items="sidebarItems"
@@ -53,11 +60,25 @@ import { resolveSidebarItems } from '../util'
 import AboutUs from "../components/About";
 import Navigation from "../components/Navigation";
 import New_home from "../components/NewHome";
+import IritaPage from "../components/IritaPage";
+import Iritahub_page from "../components/IritaHubPage";
+import SupplyPage from "../components/SupplyPage";
+import FinancePage from "../components/FinancePage";
+import MedicalPage from "../components/MedicalPage";
+import InfectiousPage from "../components/InfectiousPage";
+import CryptoCurrencyPage from "../components/CrypotCurrency";
 
 export default {
   name: 'Layout',
 
   components: {
+    CryptoCurrencyPage,
+    InfectiousPage,
+    MedicalPage,
+    FinancePage,
+    SupplyPage,
+    Iritahub_page,
+    IritaPage,
     New_home,
     Navigation,
     AboutUs,

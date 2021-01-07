@@ -6,6 +6,139 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19276246",
+      "name": "成熟的体系化机制",
+      "font_class": "chengshudetixihuajizhi",
+      "unicode": "e668",
+      "unicode_decimal": 58984
+    },
+    {
+      "icon_id": "19276241",
+      "name": "支持各类异构系统",
+      "font_class": "zhichigeleiyigouxitong",
+      "unicode": "e667",
+      "unicode_decimal": 58983
+    },
+    {
+      "icon_id": "19276215",
+      "name": "人性化的展示平台",
+      "font_class": "renxinghuadezhanshipingtai",
+      "unicode": "e666",
+      "unicode_decimal": 58982
+    },
+    {
+      "icon_id": "19276212",
+      "name": "从监管到反向赋能",
+      "font_class": "congjianguandaofanxiangfuneng",
+      "unicode": "e665",
+      "unicode_decimal": 58981
+    },
+    {
+      "icon_id": "19275596",
+      "name": "非侵入监管审计",
+      "font_class": "feiqinrujianguanshenji",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "19275579",
+      "name": " 跨系统服务互联",
+      "font_class": "kuaxitongfuwuhulian",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "19275538",
+      "name": "编组",
+      "font_class": "bianzu",
+      "unicode": "e662",
+      "unicode_decimal": 58978
+    },
+    {
+      "icon_id": "19275516",
+      "name": "可授权数据共享",
+      "font_class": "keshouquanshujugongxiang",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "19275492",
+      "name": "多场景业务支持",
+      "font_class": "duochangjingyewuzhichi",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "19272985",
+      "name": "审计追溯易",
+      "font_class": "shenjizhuisuyi",
+      "unicode": "e65e",
+      "unicode_decimal": 58974
+    },
+    {
+      "icon_id": "19272978",
+      "name": "支持大数据",
+      "font_class": "zhichidashuju",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "19272975",
+      "name": "强隐私保护",
+      "font_class": "qiangyinsibaohu",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "19272972",
+      "name": "监控效率高",
+      "font_class": "jiankongxiaoshuaigao",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "19264693",
+      "name": "面向服务",
+      "font_class": "mianxiangfuwu",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "19264686",
+      "name": "大数据支持",
+      "font_class": "dashujuzhichi",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "19264676",
+      "name": "数字资产",
+      "font_class": "shuzizichan",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "19264673",
+      "name": "隐私计算",
+      "font_class": "yinsijisuan",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "19264659",
+      "name": "跨链技术",
+      "font_class": "kualianjishu",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "19264455",
+      "name": "高效共识",
+      "font_class": "gaoxiaogongshi",
+      "unicode": "e655",
+      "unicode_decimal": 58965
+    },
+    {
       "icon_id": "19238558",
       "name": "时间轴点",
       "font_class": "shijianzhoudian",

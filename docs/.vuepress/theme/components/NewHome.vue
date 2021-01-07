@@ -1,28 +1,30 @@
 <template>
 	<div id="certify">
-		<swiper ref="mySwiper" :options="swiperOption" >
-			<swiper-slide>
-				<swiper-home></swiper-home>
-			</swiper-slide>
-			<swiper-slide>
-				<swiper-advantage></swiper-advantage>
-			</swiper-slide>
-			<swiper-slide>
-				<swiper-product></swiper-product>
-			</swiper-slide>
-			<swiper-slide>
-				<swiper-application></swiper-application>
-			</swiper-slide>
-			<swiper-slide>
-				<swiper-news></swiper-news>
-			</swiper-slide>
-			<swiper-slide>
-				<swiper-partners></swiper-partners>
-			</swiper-slide>
-			<swiper-slide>
-				<swiper-contact></swiper-contact>
-			</swiper-slide>
-		</swiper>
+		<ClientOnly>
+			<swiper ref="mySwiper" :options="swiperOption" class="my_swiper" >
+				<swiper-slide>
+					<swiper-home></swiper-home>
+				</swiper-slide>
+				<swiper-slide>
+					<swiper-advantage></swiper-advantage>
+				</swiper-slide>
+				<swiper-slide>
+					<swiper-product></swiper-product>
+				</swiper-slide>
+				<swiper-slide>
+					<swiper-application></swiper-application>
+				</swiper-slide>
+				<swiper-slide>
+					<swiper-news></swiper-news>
+				</swiper-slide>
+				<swiper-slide>
+					<swiper-partners></swiper-partners>
+				</swiper-slide>
+				<swiper-slide>
+					<swiper-contact></swiper-contact>
+				</swiper-slide>
+			</swiper>
+		</ClientOnly>
 		<div class="swiper-pagination"></div>
 	</div>
 </template>
@@ -110,8 +112,11 @@
 			},
 		},
 		mounted() {
-			this.swiper.slideTo( this.$store.state.swiperIndex ? this.$store.state.swiperIndex -1 : 0, 1000, false);
-			this.swiperObj = this.swiper
+			setTimeout(() => {
+				this.swiper.slideTo( this.$store.state.swiperIndex ? this.$store.state.swiperIndex -1 : 0, 1000, false);
+				this.swiperObj = this.swiper
+			},)
+	
 		}
 	}
 </script>
