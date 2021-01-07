@@ -131,6 +131,7 @@
 							box-sizing border-box
 							padding 1.2rem 0
 							border-radius 0 0 0.2rem 0.2rem
+							border 0.1rem solid $grayColor
 							.sub_menu_item{
 								line-height 1
 								padding 0.5rem 1.2rem
