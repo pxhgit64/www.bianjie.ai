@@ -3,6 +3,7 @@
 		<subpage_component :title="iritaHubData.pageTitle" :sub-title="iritaHubData.subTitle"></subpage_component>
 		<sub-section-component :section-data="iritaHubData.section"></sub-section-component>
 		<sub_frame_work_component :title="iritaHubData.framework.title"></sub_frame_work_component>
+		<footer_component></footer_component>
 	</div>
 </template>
 
@@ -10,9 +11,10 @@
 	import Subpage_component from "./SubPageHeader";
 	import SubSectionComponent from "./SubSectionComponent";
 	import Sub_frame_work_component from "./SubFrameWorkComponent";
+	import Footer_component from "./FooterComponent";
 	export default {
 		name: "iritahub_page",
-		components: {Sub_frame_work_component, SubSectionComponent, Subpage_component},
+		components: {Footer_component, Sub_frame_work_component, SubSectionComponent, Subpage_component},
 		computed:{
 			iritaHubData(){
 				return this.$page.frontmatter

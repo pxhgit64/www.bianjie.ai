@@ -33,7 +33,7 @@
 		margin 0 auto
 		list-style none
 		box-sizing border-box
-		padding 6rem 0
+		padding 4.8rem 0
 		.irita_section_item{
 			margin-top 3.2rem
 			.irita_section_list{

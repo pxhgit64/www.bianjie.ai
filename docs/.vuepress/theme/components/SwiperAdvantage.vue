@@ -8,7 +8,9 @@
 				<div class="swiper_advantage_list_item_card"
 				     v-for="(item,index) in advantageList"
 				     :key="index">
-						<IconComponent :icon-name="item.iconName"></IconComponent>
+						<div class="swiper_advantage_list_item_img_content">
+							<IconComponent :icon-name="item.iconName"></IconComponent>
+						</div>
 						<p class="swiper_advantage_list_item_description">{{item.description}}</p>
 				</div>
 			</div>
@@ -60,21 +62,24 @@
 				margin 6rem  auto 0 auto
 				display grid
 				grid-template-columns repeat(2, 50%);
-				grid-template-rows: repeat(2, 50%);
 				grid-row-gap: 4.7rem
 				grid-column-gap: 8rem
 				align-items center
 				justify-content center
+				height 34.3rem
 				.swiper_advantage_list_item_card{
 					box-sizing border-box
 					padding 2.4rem 3.6rem
 					display grid
 					grid-template-columns  27% 21.5rem
-					grid-template-rows: repeat(1, 100%)
 					grid-column-gap: 2rem
 					border 0.01rem solid $grayColor
 					border-radius 0.4rem !important
 					background $whiteColor
+					.swiper_advantage_list_item_img_content{
+						width 8.7rem
+						height 10rem
+					}
 					.swiper_advantage_list_item_description{
 						font-size $fontSize20
 						color $iconColor

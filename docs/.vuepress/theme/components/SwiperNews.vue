@@ -75,6 +75,7 @@
 		height 100%
 		background url("../../public/swiper_product_bg.png") no-repeat center center
 		background-size cover
+		margin-top 6rem
 		.swiper_news_content_wrap{
 			max-width 103.6rem
 			margin 0 auto

@@ -35,14 +35,14 @@
                 title: 联盟链 IRITA 系列,
                 content: 支持下一代分布式商业系统，自主可控，支持国密，可选功能模块化配置，为企业和组织快速实现联盟链搭建和部署，支持与链外原有IT系统和应用实现跨链集成。,
                 more: 更多,
-                moreLink: /,
+                moreLink: /products/irita.html,
             },
             {
                 iconName: iconyigoukualian,
                 title: 异构跨链服务枢纽 IRITA HUB,
                 content: 基于先进的跨链技术、IBC 协议和 Tendermint 容错共识机制，支持联盟链、公链和链外企业传统系统间的可信计算调用及数据交互，支持跨链资产交换/转移、跨链数据共享和跨链服务调用。,
                 more: 更多,
-                moreLink: /,
+                moreLink: /products/iritahub.html,
             },
             {
                 iconName: iconIRITA-OPB,
@@ -55,8 +55,8 @@
                 iconName: iconzixunfuwu,
                 title: 咨询和技术服务,
                 content: 基于全球领先的区块链和大数据综合技术集成能力，为企业业务场景制定定制化解决方案和技术实施。,
-                more: 更多,
-                moreLink: /,
+                more: ,
+                moreLink: ,
             }
         ],
         footMenuList:[IRITA,IRITA HUB,IRITA OPB,咨询和技术服务],
@@ -297,6 +297,7 @@
         cooperationApplicationTips:{
             userName: 姓名,
             company: 公司 / 组织,
+            position: 职位,
             mail: 邮箱,
             telephone: 手机号,
             cooperationContent: 合作需求,
@@ -311,8 +312,10 @@
             warningText:{
                 userNameWarning: 请输入姓名,
                 companyWarning: 请输入公司名称或组织,
+                positionWarning: 请输入职位,
                 mailWarning: 请输入您的邮箱,
-                telephoneWarning: 请输入您的手机号
+                telephoneWarning: 请输入您的手机号,
+                cooperationWarning: 请输入您的合作需求
             },
         }
     },

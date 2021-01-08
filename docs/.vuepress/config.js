@@ -4,7 +4,8 @@ module.exports = {
 	base:'/',
 	head:[
 		[ 'link',{ rel:'icon', href:'/favicon.ico'} ],
-		[ 'meta',{name:'keywords',content:'Bianjie,边界,边界智能,IRITA'} ]
+		[ 'meta',{name:'keywords',content:'Bianjie,边界,边界智能,IRITA'} ],
+		[ 'meta',{name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
 	],
 	themeConfig: {
 		logo:'/logo.png',
@@ -15,8 +16,8 @@ module.exports = {
 			{text:'优势',link:'/advantage',index:2},
 			{text:'产品',link:'/product',index:3,items:[
 					{text:'IRITA',link:'/products/irita'},
-					{text:'BSN-IRITA HUB',link:'/products/iritahub'},
-					{text:'IRISnet',link:'/irisnet'},
+					{text:'IRITA HUB',link:'/products/iritahub'},
+					{text:'IRITA OPB',link:'/products/iritaopb'},
 				]},
 			{text:'应用',link:'/app',index:4,items:[
 					{text:'供应链金融',link:'/application/supply'},

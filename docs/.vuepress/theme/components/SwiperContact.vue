@@ -11,7 +11,7 @@
 				</p>
 				<div class="button_content">
 					<span class="cooperation_button" @click="cooperation()">{{contactData.cooperationButtonLabel}}</span>
-					<span class="join_button">{{contactData.joinUsButtonLabel}}</span>
+					<span class="join_button" @click="joinUs()">{{contactData.joinUsButtonLabel}}</span>
 				</div>
 			</div>
 			<div class="swiper_contact_Qr_content">
@@ -40,6 +40,9 @@
 			cooperation(){
 				this.$store.commit('swiperIndex',6)
 				this.$store.commit('partnerActiveIndex',2)
+			},
+			joinUs(){
+				this.$router.push('/joinus')
 			}
 		}
 	}
@@ -94,6 +97,7 @@
 						color $whiteColor
 						padding 0.4rem 0.8rem
 						border-radius 0.2rem
+						cursor pointer
 					}
 				}
 			}

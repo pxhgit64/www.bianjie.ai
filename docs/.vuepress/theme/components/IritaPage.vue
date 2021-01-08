@@ -8,7 +8,7 @@
 				<div class="core_advantage_item"
 				     v-for="(item,index) in iritaSection.coreAdvantage.list">
 					<div class="core_advantage_item_image_content">
-						<icon-component :icon-name="item.icon"></icon-component>
+						<icon-component :icon-name="item.iconName"></icon-component>
 					</div>
 					<p class="core_advantage_title">{{item.title}}</p>
 					<p class="core_advantage_section">{{item.content}}</p>
@@ -17,6 +17,7 @@
 			</div>
 		</div>
 		<sub_frame_work_component :title="iritaSection.framework.title"></sub_frame_work_component>
+		<footer_component></footer_component>
 	</div>
 </template>
 
@@ -25,9 +26,10 @@
 	import Subpage_component from "./SubPageHeader";
 	import SubSectionComponent from "./SubSectionComponent";
 	import Sub_frame_work_component from "./SubFrameWorkComponent";
+	import Footer_component from "./FooterComponent";
 	export default {
 		name: "irita-page",
-		components: {Sub_frame_work_component, SubSectionComponent, Subpage_component, IconComponent},
+		components: {Footer_component, Sub_frame_work_component, SubSectionComponent, Subpage_component, IconComponent},
 		data(){
 			return {
 			
@@ -77,18 +79,24 @@
 			}
 			.core_advantage_content{
 				max-width 120rem
-				margin 0 auto
+				margin 4.8rem auto 0 auto
 				display grid
 				justify-items center
 				grid-template-columns repeat(3,33.33%)
+				grid-row-gap 4.8rem
 				.core_advantage_item{
 					max-width 27rem
 					color $iconColor
+					display flex
+					flex-direction column
+					align-items center
 					text-align center
 					.core_advantage_item_image_content{
-					
+						width 5rem
+						height 5rem
 					}
 					.core_advantage_title{
+						margin-top 2.4rem
 						color $iconColor
 						font-weight $fontWeight600
 					}

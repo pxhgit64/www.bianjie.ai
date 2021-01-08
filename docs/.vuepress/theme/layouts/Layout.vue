@@ -32,11 +32,13 @@
     <New_home v-if="$page.frontmatter.isHome"></New_home>
     <irita-page v-if="$page.frontmatter.isIrita"></irita-page>
     <iritahub_page v-if="$page.frontmatter.isIritaHub"></iritahub_page>
+    <irita-opb-page v-if="$page.frontmatter.isIritaOpb"></irita-opb-page>
     <supply-page v-if="$page.frontmatter.isSupply"></supply-page>
     <finance-page v-if="$page.frontmatter.isFinance"></finance-page>
     <medical-page v-if="$page.frontmatter.isMedical"></medical-page>
     <infectious-page v-if="$page.frontmatter.isInfectious"></infectious-page>
     <crypto-currency-page v-if="$page.frontmatter.isCryptoCurrency"></crypto-currency-page>
+    <join-us-page v-if="$page.frontmatter.isJoinUs"></join-us-page>
     <!--<Page
       v-else
       :sidebar-items="sidebarItems"
@@ -67,11 +69,15 @@ import FinancePage from "../components/FinancePage";
 import MedicalPage from "../components/MedicalPage";
 import InfectiousPage from "../components/InfectiousPage";
 import CryptoCurrencyPage from "../components/CrypotCurrency";
+import IritaOpbPage from "../components/IritaOpbPage";
+import JoinUsPage from "../components/JoinUS";
 
 export default {
   name: 'Layout',
 
   components: {
+    JoinUsPage,
+    IritaOpbPage,
     CryptoCurrencyPage,
     InfectiousPage,
     MedicalPage,

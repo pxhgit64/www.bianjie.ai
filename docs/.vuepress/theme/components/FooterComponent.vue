@@ -3,15 +3,15 @@
 		<div class="footer_content_wrap">
 			<div class="footer_logo_content">
 				<div class="footer_logo">
-					<icon-component :icon-name="aboutFooterData.iconName"></icon-component>
+					<icon-component :icon-name="'iconLOGO'"></icon-component>
 				</div>
 				<p class="contact_content">
-					<span class="contact_label">{{aboutFooterData.contactLabel}}</span>
-					<span class="contact_mail">{{aboutFooterData.mail}}</span>
+					<span class="contact_label">联系我们：</span>
+					<span class="contact_mail">contact@bianjie.ai</span>
 				</p>
 				<div class="button_content">
-					<span class="cooperation_button" @click="cooperation()">{{aboutFooterData.cooperationButtonLabel}}</span>
-					<span class="join_button">{{aboutFooterData.joinUsButtonLabel}}</span>
+					<span class="cooperation_button" @click="cooperation()">合作申请</span>
+					<span class="join_button" @click="joinUs()">加入我们</span>
 				</div>
 			</div>
 			<div class="footer_qr_content">
@@ -36,6 +36,9 @@
 				this.$router.push('/')
 				this.$store.commit('swiperIndex',6)
 				this.$store.commit('partnerActiveIndex',2)
+			},
+			joinUs(){
+				this.$router.push('/joinus')
 			}
 		},
 		computed:{
@@ -103,6 +106,7 @@
 						color $whiteColor
 						padding 0.4rem 0.8rem
 						border-radius 0.2rem
+						cursor pointer
 					}
 				}
 			}

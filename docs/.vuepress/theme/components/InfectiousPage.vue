@@ -11,6 +11,7 @@
 				<project_list_component :project-list="infectiousData.projectSection"></project_list_component>
 			</div>
 		</div>
+		<footer_component></footer_component>
 	</div>
 </template>
 
@@ -18,9 +19,10 @@
 	import Subpage_component from "./SubPageHeader";
 	import Summarize_section_component from "./ApplicationSummarizeSectionComponent";
 	import Project_list_component from "./ProjectSectionComponent";
+	import Footer_component from "./FooterComponent";
 	export default {
 		name: "infectious-page",
-		components: {Project_list_component, Summarize_section_component, Subpage_component},
+		components: {Footer_component, Project_list_component, Summarize_section_component, Subpage_component},
 		computed:{
 			infectiousData () {
 				return this.$page.frontmatter
@@ -31,10 +33,11 @@
 
 <style scoped lang="stylus">
 	.supply_container{
+		margin-top 6rem
 		.supply_summarize_project_content{
 			background url("../../public/swiper_product_bg.png") no-repeat center center
 			background-size cover
-			margin-bottom 6rem
+			padding-bottom 6rem
 			.supply_summarize_content{
 				max-width 120rem
 				color $iconColor

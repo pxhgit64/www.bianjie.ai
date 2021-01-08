@@ -2,8 +2,11 @@
 	<div class="swiper_home_container">
 		<div class="swiper_home_content_wrap">
 			<div class="swiper_home_left_content">
-				<h1 class="swiper_home_left_title" v-for="item in frontmatter('homeContent').title">{{item}}</h1>
-				<p class="swiper_home_subtitle">{{frontmatter('homeContent').subTitle}}</p>
+				<div>
+					<h1 class="swiper_home_left_title" v-for="item in frontmatter('homeContent').title">{{item}}</h1>
+					<p class="swiper_home_subtitle">{{frontmatter('homeContent').subTitle}}</p>
+				</div>
+		
 				<!--<p class="swiper_description" v-for="value in frontmatter('homeContent').description">{{value}}</p>
 				<div class="about_us">{{frontmatter('homeContent').aboutUs}}</div>-->
 			</div>
@@ -42,6 +45,7 @@
 		position relative
 		.swiper_home_content_wrap{
 			display flex
+			align-items center
 			box-sizing border-box
 			height 100%
 			max-width 120rem
@@ -52,8 +56,9 @@
 				background url("../../public/swiper_home_left.png") no-repeat top left
 				background-position-y 50%
 				background-size 100%
+				display flex
+				align-items center
 				.swiper_home_left_title{
-					margin-top 23.9rem
 					font-size $fontSize72
 					margin-left 10.4rem
 					font-weight initial
