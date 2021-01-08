@@ -53,6 +53,7 @@
 	height 100%
 	background url("../../public/swiper_advantage_bg.png")
 	background-size cover
+	margin-top 6rem
 	.swiper_partner_content_wrap{
 		max-width 120rem
 		margin 0 auto

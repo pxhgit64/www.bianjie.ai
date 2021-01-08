@@ -1,7 +1,6 @@
-{
-  "app": {
+ {
     "serverId": "${serverId}",
     "templateId": "${templateId}",
     "userId": "${userId}"
-  }
 }
+

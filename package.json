@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vuepress dev docs --temp .temp",
     "build": "cross-env NODE_ENV=production vuepress build docs",
-    "test":"node emailConfig.js"
+    "env":"node emailConfig.js"
   },
   "repository": {
     "type": "git",

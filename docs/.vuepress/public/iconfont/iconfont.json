@@ -6,6 +6,90 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19293804",
+      "name": "IDE支持",
+      "font_class": "IDEzhichi",
+      "unicode": "e674",
+      "unicode_decimal": 58996
+    },
+    {
+      "icon_id": "19293798",
+      "name": "多智能合约",
+      "font_class": "duozhinengheyue",
+      "unicode": "e673",
+      "unicode_decimal": 58995
+    },
+    {
+      "icon_id": "19293795",
+      "name": "资源管理",
+      "font_class": "ziyuanguanli",
+      "unicode": "e672",
+      "unicode_decimal": 58994
+    },
+    {
+      "icon_id": "19293793",
+      "name": "节点准入控制",
+      "font_class": "jiedianzhunrukongzhi",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "19280957",
+      "name": "实时监控地址和交易",
+      "font_class": "shishijiankongdizhihejiaoyi",
+      "unicode": "e670",
+      "unicode_decimal": 58992
+    },
+    {
+      "icon_id": "19280207",
+      "name": "快速全量大数据分析",
+      "font_class": "kuaisuquanliangdashujufenxi",
+      "unicode": "e66f",
+      "unicode_decimal": 58991
+    },
+    {
+      "icon_id": "19280174",
+      "name": "可视化关联交易展示",
+      "font_class": "keshihuaguanlianjiaoyizhanshi",
+      "unicode": "e66e",
+      "unicode_decimal": 58990
+    },
+    {
+      "icon_id": "19280170",
+      "name": "支持多主流数字货币",
+      "font_class": "zhichiduozhuliushuzihuobi",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "19278475",
+      "name": "简单易部署",
+      "font_class": "jiandanyibushu",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "19278422",
+      "name": "无纸化流转",
+      "font_class": "wuzhihualiuzhuan",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "19278418",
+      "name": "  全隐私保护",
+      "font_class": "quanyinsibaohu",
+      "unicode": "e66a",
+      "unicode_decimal": 58986
+    },
+    {
+      "icon_id": "19278417",
+      "name": "全流程追溯",
+      "font_class": "quanliuchengzhuisu",
+      "unicode": "e669",
+      "unicode_decimal": 58985
+    },
+    {
       "icon_id": "19276246",
       "name": "成熟的体系化机制",
       "font_class": "chengshudetixihuajizhi",

@@ -54,6 +54,7 @@
 				width 100%
 				margin-left 1.9rem
 				.news_title{
+					margin-top 0
 					padding-bottom 0
 					width 32rem
 					font-size $fontSize16

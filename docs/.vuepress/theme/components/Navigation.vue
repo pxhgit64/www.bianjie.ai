@@ -152,7 +152,7 @@
 		.navigation_right_content{
 			display flex
 			align-items center
-			background $buttonColor
+			background $navigationImgBgColor
 			.navigation_right_content_item{
 				display inline-block
 				width 10rem

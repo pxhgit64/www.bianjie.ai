@@ -4,7 +4,7 @@
 			<div class="product_swiper_left_content">
 				<h1 class="product_swiper_card_title">{{productData.title}}</h1>
 				<div class="product_content">{{productData.content}}</div>
-				<router-link class="product_detail_link" :to="`${productData.moreLink}`">{{productData.more}}</router-link>
+				<router-link v-show="productData.more" class="product_detail_link" :to="`${productData.moreLink}`">{{productData.more}}</router-link>
 			</div>
 			<div class="product_swiper_right_content">
 				<div class="product_icon_content">
