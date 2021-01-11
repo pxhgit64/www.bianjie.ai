@@ -79,6 +79,21 @@
 				}
 			}
 		}
-		
+	}
+	@media (max-width: 1200px){
+		.news_item_component_content{
+			.news_item_content_wrap{
+				padding 2rem
+				.news_item_content{
+					grid-template-columns 100%
+					.news_item_img_content{
+						display none
+					}
+					.news_container{
+						margin-left 0
+					}
+				}
+			}
+		}
 	}
 </style>

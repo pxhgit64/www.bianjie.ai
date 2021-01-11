@@ -117,7 +117,31 @@
 						font-size $fontSize16
 						letter-spacing 0.2rem
 						color $whiteColor
+						margin-top 1.6rem
 					}
+				}
+			}
+		}
+	}
+	@media (max-width: 1200px){
+		.swiper_contact_container{
+			.swiper_contact_content_wrap{
+				margin-left 2rem
+				margin-right 2rem
+				.swiper_contact_logo_content{
+					margin-left 10%
+					margin-top 6rem
+					padding-top 0
+					margin-bottom 5rem
+					display flex
+					justify-content center
+					flex-direction column
+				}
+				.swiper_contact_Qr_content{
+					padding-top 0
+					display flex
+					justify-content center
+					flex-direction column
 				}
 			}
 		}

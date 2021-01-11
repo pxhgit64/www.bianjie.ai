@@ -1,10 +1,10 @@
 module.exports = {
 	title:'边界智能-BIANJIE.AI',
-	description:'bienjie websit',
+	description:'上海边界智能专注于区块链、大数据相关产品技术研发、应用平台建设和解决方案咨询的高科技公司和国家高新技术企业。以区块链跨链、隐私计算及大数据分析技术创新为核心，自主研发了安全可控、符合国密标准、支持下一代分布式商业系统构建的企业联盟链 IRITA产品系列。',
 	base:'/',
 	head:[
 		[ 'link',{ rel:'icon', href:'/favicon.ico'} ],
-		[ 'meta',{name:'keywords',content:'Bianjie,边界,边界智能,IRITA'} ],
+		[ 'meta',{name:'keywords',content:'BIANJIE,BIANJIE.AI,bianjie.ai,bianjie,上海边界智能,区块链技术服务,供应链金融,金融监管,医疗电子处方管理,传染病预警和监控,加密货币反洗钱,数字化凭证,隐私计算和保护,跨链可信数据交互,IRITA,IRITA HUB,IRITA OPB,IRISnet,COSMOS,Tendermint'} ],
 		[ 'meta',{name:'viewport',content: 'width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0'}]
 	],
 	themeConfig: {

@@ -65,4 +65,22 @@
 			}
 		}
 	}
+	@media (max-width: 1200px){
+		.partner_img_container{
+			margin-left 2rem
+			margin-right 2rem
+			width auto
+			.partner_img_content_wrap{
+				margin 0 auto
+				display grid
+				grid-auto-flow row;
+				grid-template-columns repeat(auto-fill,22rem);
+				grid-row-gap 6rem
+				.partner_img_item{
+					width 100%
+					height 4rem
+				}
+			}
+		}
+	}
 </style>

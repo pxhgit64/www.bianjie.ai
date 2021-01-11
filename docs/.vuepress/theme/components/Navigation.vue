@@ -169,5 +169,31 @@
 			}
 		}
 	}
-	
+	@media (max-width: 1030px){
+		.navigation_container{
+			.navigation_left_container{
+				.navigation_content_wrap{
+					.navigation_img_content{
+						width 14.2rem
+						justify-content center
+						img{
+							width 9.6rem
+							padding 0.7rem 1.4rem
+						}
+					}
+					.navigation_list_container{
+						.navigation_list_item{
+							padding 0 1.2rem
+						}
+					}
+					
+				}
+			}
+			.navigation_right_content{
+				.navigation_right_content_item{
+					width 8rem
+				}
+			}
+		}
+	}
 </style>

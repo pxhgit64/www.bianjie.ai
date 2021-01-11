@@ -35,7 +35,7 @@
 					// 设定初始化时slide的索引
 					initialSlide: 0,
 					//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)
-					direction: 'vertical',
+					direction: 'horizontal',
 					// 自动切换图配置
 					/*autoplay: {
 						delay: 5000,
@@ -46,7 +46,7 @@
 					loop: true,
 					slidesPerView: 'auto',
 					// loopedSlides: 3,
-					loopAdditionalSlides: 0,
+					// loopAdditionalSlides: 0,
 					// 一个屏幕展示的数量
 					// 间距
 					// spaceBetween: 26,
@@ -61,6 +61,23 @@
 						stopOnLastSlide: false,
 						disableOnInteraction: true
 					},
+				},
+				mobileMemorabiliaImgOption:{
+					watchSlidesProgress: true,
+					slidesPerView: "auto",
+					centeredSlides: true,
+					loop: true,
+					speed: 300,
+					autoplay: true,
+					on:{
+						setTransition: function(transition) {
+							for (var i = 0; i < this.slides.length; i++) {
+								var slide = this.slides.eq(i);
+								slide.transition(transition);
+							}
+							
+						}
+					}
 				},
 				swiperObj:null,
 			}
@@ -101,6 +118,27 @@
 				}
 			}
 			
+		}
+	}
+	@media (max-width: 1150px){
+		.memorabilia_swiper_content{
+			height 32rem
+			margin-top 3.6rem
+			.swiper_wrap{
+				.slide{
+					width  auto
+					.memorabilia_swiper_img{
+						width  auto
+						height 32rem
+						margin 0 2rem
+						img{
+							display block
+							height  100%
+							width auto
+						}
+					}
+				}
+			}
 		}
 	}
 </style>

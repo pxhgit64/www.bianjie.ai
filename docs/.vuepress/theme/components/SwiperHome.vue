@@ -101,4 +101,27 @@
 			}
 		}
 	}
+	@media(max-width: 950px){
+		.swiper_home_container{
+			.swiper_home_content_wrap{
+				flex-direction column
+				margin-top 6rem
+				.swiper_home_left_content{
+					div{
+						.swiper_home_left_title{
+							margin-left 0
+							text-align center
+						}
+						.swiper_home_subtitle{
+							margin-left 0
+							text-align center
+						}
+					}
+				}
+				.swiper_home_right_content{
+					max-width 38.6rem
+				}
+			}
+		}
+	}
 </style>
