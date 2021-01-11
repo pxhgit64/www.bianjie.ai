@@ -1,6 +1,18 @@
 <template>
 	<div class="memorabilia_swiper_content" id="memorabilia_swiper_img">
-		<swiper ref="memorabiliaSwiper" :options="memorabiliaImgOption" class="swiper_wrap">
+		<swiper v-show="!flShowMobileSwiperOptions" ref="memorabiliaSwiper"
+		        :options="memorabiliaImgOption"
+		        class="swiper_wrap">
+			<swiper-slide class="slide" v-for="item in memorabiliaImageList">
+				<div class="memorabilia_swiper_img">
+					<img :src="$withBase(`/honorImage/${item}`)" alt="">
+				</div>
+			</swiper-slide >
+		</swiper>
+		
+		<swiper v-show="flShowMobileSwiperOptions" ref="memorabiliaSwiperMobile"
+		        :options="mobileMemorabiliaImgOption"
+		        class="mobile_swiper_wrap">
 			<swiper-slide class="slide" v-for="item in memorabiliaImageList">
 				<div class="memorabilia_swiper_img">
 					<img :src="$withBase(`/honorImage/${item}`)" alt="">
@@ -22,12 +34,6 @@
 		data() {
 			return {
 				memorabiliaImgOption:{
-					// 分页器配置
-					pagination: {
-						el: '.swiper-pagination',
-						clickable: false,
-						progressbarOpposite: true,
-					},
 					mousewheel: true,
 					//开启计算
 					watchSlidesProgress : true,
@@ -35,7 +41,7 @@
 					// 设定初始化时slide的索引
 					initialSlide: 0,
 					//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)
-					direction: 'horizontal',
+					direction: 'vertical',
 					// 自动切换图配置
 					/*autoplay: {
 						delay: 5000,
@@ -63,33 +69,48 @@
 					},
 				},
 				mobileMemorabiliaImgOption:{
-					watchSlidesProgress: true,
-					slidesPerView: "auto",
-					centeredSlides: true,
+					pagination: {
+						el: '.swiper-pagination',
+						clickable: false,
+						progressbarOpposite: true,
+					},
+					mousewheel: true,
+					watchSlidesProgress : true,
+					centeredSlides:true,
+					initialSlide: 0,
+					//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)
+					direction: 'horizontal',
 					loop: true,
-					speed: 300,
-					autoplay: true,
-					on:{
-						setTransition: function(transition) {
-							for (var i = 0; i < this.slides.length; i++) {
-								var slide = this.slides.eq(i);
-								slide.transition(transition);
-							}
-							
-						}
-					}
+					slidesPerView: 'auto',
+					observer: true,
+					observeParents: true,
+					autoplay: {
+						delay: 3000,
+						stopOnLastSlide: false,
+						disableOnInteraction: true
+					},
 				},
 				swiperObj:null,
+				innerWidth: 0,
+				flShowMobileSwiperOptions:false
+			}
+		},
+		watch:{
+			innerWidth(innerWidth){
+				let changeStyleNodeWidth = 1150
+				if(innerWidth < changeStyleNodeWidth){
+					this.flShowMobileSwiperOptions = true
+				}else {
+					this.flShowMobileSwiperOptions = false
+				}
 			}
 		},
 		mounted(){
-			this.swiperObj = this.swiper
+			this.innerWidth = window.innerWidth
+			window.onresize = (e) => {
+				this.innerWidth = e.currentTarget.innerWidth
+			}
 		},
-		computed: {
-			swiper() {
-				return this.$refs.memorabiliaSwiper.swiper;
-			},
-		}
 	}
 </script>
 
@@ -124,7 +145,7 @@
 		.memorabilia_swiper_content{
 			height 32rem
 			margin-top 3.6rem
-			.swiper_wrap{
+			.mobile_swiper_wrap{
 				.slide{
 					width  auto
 					.memorabilia_swiper_img{

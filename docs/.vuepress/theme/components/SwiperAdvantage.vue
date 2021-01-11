@@ -103,4 +103,35 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.swiper_advantage_container{
+			.swiper_advantage_content_wrap{
+				.swiper_advantage_title_content{
+					padding-top 9.2rem
+					.swiper_advantage_title{
+						font-size 2rem
+					}
+				}
+				.swiper_advantage_list_content{
+					margin-top 2.4rem
+					grid-row-gap 0.8rem
+					.swiper_advantage_list_item_card{
+						padding 1.2rem 1.6rem
+						grid-column-gap 1.2rem
+						align-items center
+						grid-template-columns auto 16.1rem
+						.swiper_advantage_list_item_img_content{
+							width 6.3rem
+							height 7.2rem
+						}
+						.swiper_advantage_list_item_description{
+							font-size $fontSize16
+							max-width 16.1rem
+							letter-spacing 0
+						}
+					}
+				}
+			}
+		}
+	}
 </style>
