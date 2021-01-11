@@ -55,4 +55,24 @@
 			}
 		}
 	}
+	@media (max-width: 1200px){
+		.project_list_container{
+			grid-template-columns repeat(2,50%)
+		}
+	}
+	@media (max-width: 768px){
+		.project_list_container{
+			grid-template-columns repeat(1,100%)
+			margin-top 2.4rem
+			.project_item_content{
+				max-width 100%
+				.project_item_title{
+					margin-top 2rem
+				}
+				.project_item_section{
+					margin-top 2rem
+				}
+			}
+		}
+	}
 </style>

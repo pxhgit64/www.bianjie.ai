@@ -41,4 +41,12 @@
 			font-size $fontSize16
 		}
 	}
+	@media (max-width: 1200px){
+		.sub_page_container{
+			.title{
+				font-size 2.4rem
+				letter-spacing 0.3rem
+			}
+		}
+	}
 </style>

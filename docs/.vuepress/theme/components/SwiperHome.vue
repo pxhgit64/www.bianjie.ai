@@ -124,4 +124,27 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.swiper_home_container{
+			.swiper_home_content_wrap{
+				.swiper_home_left_content{
+					div{
+						.swiper_home_left_title{
+							font-size 4.8rem
+							font-weight $fontWeight600
+							letter-spacing 0.4rem
+						}
+						.swiper_home_subtitle{
+							margin-top 1.6rem
+							font-size $fontSize15
+							letter-spacing 0.1rem
+						}
+					}
+				}
+				.swiper_home_right_content{
+					display none
+				}
+			}
+		}
+	}
 </style>

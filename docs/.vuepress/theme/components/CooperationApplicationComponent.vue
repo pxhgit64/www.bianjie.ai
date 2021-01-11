@@ -299,4 +299,30 @@
 			padding-right 2rem
 		}
 	}
+	@media (max-width: 768px){
+		.cooperation_application_container{
+			padding 1.2rem 0.9rem
+			margin-top 2rem
+			.cooperation_application_content_wrap{
+				padding-top 0
+				height auto
+				padding-bottom 0
+				.cooperation_ipt_content{
+					.cooperation_ipt_label{
+						font-size 1.6rem
+						font-weight $fontWeight600
+					}
+				}
+				.cooperation_warning_label{
+					font-size 0.12rem
+					margin-bottom 0.8rem
+				}
+				.cooperation_button{
+					margin-top 0
+					display flex
+					justify-content center
+				}
+			}
+		}
+	}
 </style>

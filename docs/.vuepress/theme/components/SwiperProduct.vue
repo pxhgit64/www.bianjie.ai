@@ -107,7 +107,7 @@
 	background-size cover
 	.swiper_product_content_wrap{
 		max-width 93.4rem
-		padding-top 8rem
+		padding-top 6rem
 		margin  0 auto
 		.swiper_product_title_content{
 			margin-top 8rem
@@ -201,6 +201,58 @@
 							}
 							
 						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 768px){
+		.swiper_product_container{
+			.swiper_product_content_wrap{
+				.swiper_product_title_content{
+					margin-top 2.4rem
+					.swiper_product_title{
+						font-size $fontSize20
+					}
+				}
+				#product_swiper_content{
+					margin-top 2rem
+					/deep/.swiper-container{
+						.swiper-wrapper{
+							.swiper-slide{
+								.product_swiper_content{
+									padding 2.8rem 2.4rem
+									height 36.9rem
+									box-sizing border-box
+									.product_swiper_content_wrap{
+										padding 0
+										grid-template-columns auto
+										grid-template-rows none
+										.product_swiper_left_content{
+											
+											.product_swiper_card_title{
+												font-size $fontSize16
+												font-weight $fontWeight600
+											}
+											.product_content{
+												font-size $fontSize16
+												margin-top 1.6rem
+												line-height 3.2rem
+											}
+											.product_detail_link{
+												font-size $fontSize16
+											}
+										}
+										.product_swiper_right_content{
+											display none
+										}
+									}
+								}
+							}
+						}
+					}
+					.product_tab_content{
+						display none
 					}
 				}
 			}

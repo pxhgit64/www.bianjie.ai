@@ -146,4 +146,51 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.swiper_contact_container{
+			display flex
+			align-content center
+			justify-content center
+			.swiper_contact_content_wrap{
+				flex-direction column
+				justify-content center
+				.swiper_contact_logo_content{
+					flex none
+					margin-left 0
+					margin-top 0
+					margin-bottom 0
+					.bian_jie_log_content{
+						max-width 16.7rem
+						margin 0 auto
+						height 6rem
+						margin-bottom 2.4rem
+					}
+					.contact_content{
+						text-align center
+						padding-top 1.5rem
+					}
+					.button_content{
+						display flex
+						justify-content center
+					}
+				}
+				.swiper_contact_Qr_content{
+					flex none
+					margin-top 3.6rem
+					.qr_img{
+						width 100%
+						img{
+							max-width 10rem !important
+							width 100%
+						}
+					}
+					.qr_label{
+						margin-top 0.8rem
+						font-size $fontSize14
+					}
+				}
+			}
+			
+		}
+	}
 </style>

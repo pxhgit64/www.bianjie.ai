@@ -67,4 +67,22 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.partner_tab_container{
+			.partner_tab_content_wrap{
+				padding 3.2rem 0 0 0
+				.partner_tab_icon_content{
+					display flex
+					.partner_icon_content{
+						display none
+
+					}
+					.partner_tab_label{
+						font-size $fontSize20
+						margin-left 1.6rem
+					}
+				}
+			}
+		}
+	}
 </style>
