@@ -139,4 +139,47 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.footer_container{
+			.footer_content_wrap{
+				flex-direction column
+				.footer_logo_content{
+					flex none
+					padding-bottom 0
+					.footer_logo{
+						margin 2.4rem  auto 0 auto
+						max-width 18rem
+					}
+					.contact_content{
+						text-align center
+						.contact_label{
+							margin-top 1.2rem
+						}
+						.contact_mail{
+							margin-top 1.2rem
+						}
+					}
+					.button_content{
+						display flex
+						justify-content center
+						margin-top 1.2rem
+					}
+				}
+				.footer_qr_content{
+					margin-top 1.2rem
+					.qr_img{
+						margin-bottom 2.4rem
+						img{
+							max-width 8rem
+							width 100%
+						}
+						.qr_label{
+							margin-top 1.2rem
+							font-size $fontSize14
+						}
+					}
+				}
+			}
+		}
+	}
 </style>
