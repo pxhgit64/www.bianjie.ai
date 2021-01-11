@@ -53,4 +53,9 @@
 		}
 	}
 }
+	@media (max-width: 1200px){
+		.footer_container{
+		
+		}
+	}
 </style>

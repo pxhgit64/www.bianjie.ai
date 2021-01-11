@@ -131,6 +131,12 @@
 				}
 			}
 		}
-	
+	}
+	@media (max-width: 1200px){
+		.footer_container{
+			.footer_content_wrap{
+				margin 0 4.8rem
+			}
+		}
 	}
 </style>

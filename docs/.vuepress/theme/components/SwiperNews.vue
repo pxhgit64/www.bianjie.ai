@@ -29,15 +29,38 @@
 			return {
 				newsListData: [],
 				currentPageData: [],
+				changeData : [],
 				pageSize: newsPageSize,
 				pageNum:1,
-				total: 0
+				total: 0,
+				innerWidth: 0
 			}
 		},
 		created(){
 			this.total = this.$page.frontmatter.newsContent.list.length
 			this.newsListData  = this.pageNation(this.$page.frontmatter.newsContent.list)
+			this.changeData = this.$page.frontmatter.newsContent.list
 			this.currentPageData = this.newsListData[this.pageNum - 1]
+		},
+		watch:{
+			innerWidth(innerWidth){
+				let changeStyleNodeWidth = 768
+				if(innerWidth < changeStyleNodeWidth){
+					this.pageSize = 3
+					this.newsListData = this.pageNation(this.changeData)
+					this.currentPageData = this.newsListData[this.pageNum - 1]
+				}else {
+					this.pageSize = 6
+					this.newsListData = this.pageNation(this.changeData)
+					this.currentPageData = this.newsListData[this.pageNum - 1]
+				}
+			}
+		},
+		mounted(){
+			this.innerWidth = window.innerWidth
+			window.onresize = (e) => {
+				this.innerWidth = e.currentTarget.innerWidth
+			}
 		},
 		methods:{
 			changeCurrentPage(currentPage){
@@ -61,10 +84,6 @@
 			title () {
 				return this.$page.frontmatter.newsContent.title
 			},
-			newsList() {
-				
-				return
-			}
 		}
 	}
 </script>
@@ -103,5 +122,19 @@
 		}
 		
 	}
-
+@media(max-width: 1200px){
+	.swiper_news_container{
+		.swiper_news_content_wrap{
+			.swiper_news_list_content{
+				margin-left: 2rem
+				margin-right: 2rem
+				justify-items center
+				box-sizing border-box
+				grid-template-columns 1fr 1fr
+				grid-row-gap 1.6rem
+				grid-column-gap 0.8rem
+			}
+		}
+	}
+}
 </style>

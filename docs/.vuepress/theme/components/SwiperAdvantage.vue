@@ -90,4 +90,17 @@
 			}
 		}
 	}
+	@media (max-width: 980px){
+		.swiper_advantage_container{
+			.swiper_advantage_content_wrap{
+				.swiper_advantage_title_content{
+					padding-top 14rem
+				}
+				.swiper_advantage_list_content{
+					grid-template-columns none
+					grid-row-gap 2.4rem
+				}
+			}
+		}
+	}
 </style>

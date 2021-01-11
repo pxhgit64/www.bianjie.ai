@@ -289,4 +289,14 @@
 			}
 		}
 	}
+	@media (max-width: 1200px){
+		.cooperation_application_container{
+			margin-left 2rem
+			margin-right 2rem
+			width auto
+			box-sizing border-box
+			padding-left 2rem
+			padding-right 2rem
+		}
+	}
 </style>

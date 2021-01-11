@@ -1,6 +1,6 @@
 <template>
 	<div class="swiper_application_container">
-		<div class="swiper_application_content_wrap">
+		<div class="swiper_application_content_wrap" id="application_swiper_container">
 			<div class="swiper_application_scenarios_content">
 				<h1 class="swiper_application_scenarios_title">{{scenariosTitle}}</h1>
 				<div class="swiper_application_scenarios_list_item"
@@ -29,6 +29,41 @@
 					</div>
 				</div>
 			</div>
+			<swiper id="application_swiper_content"  ref="applicationSwiper" :options="applicationSwiperOption">
+				<swiper-slide>
+					<div class="swiper_application_scenarios_content">
+						<h1 class="swiper_application_scenarios_title">{{scenariosTitle}}</h1>
+						<div class="swiper_application_scenarios_list_item"
+						     v-for="(item,index) in scenariosList"
+						     :key="index">
+							<p class="item_title_content">
+						<span class="item_icon_content">
+							<icon-component :icon-name="item.iconName"></icon-component>
+						</span>
+								<span class="item_title">{{item.title}}</span>
+							</p>
+							<p class="item_content">{{item.content}}</p>
+						</div>
+					</div>
+				</swiper-slide>
+				<swiper-slide>
+					<div class="swiper_solution_content">
+						<h1 class="swiper_application_solution_title">{{scenariosData.title}}</h1>
+						<div class="swiper_application_solution_list_content"
+						     v-for="(item,index) in scenariosData.list"
+						     :key="index">
+							<div class="list_icon_content">
+								<icon-component :icon-name="item.iconName"></icon-component>
+							</div>
+							<div class="list_arrow_content">
+								<span class="item_content">{{item.content}}</span>
+								<span class="iconfont iconjiantou"></span>
+							</div>
+						</div>
+					</div>
+				</swiper-slide>
+			</swiper>
+			<div class="application_swiper-pagination"></div>
 		</div>
 	</div>
 </template>
@@ -40,7 +75,13 @@
 		components: {IconComponent},
 		data () {
 			return {
-			
+				applicationSwiperOption:{
+					pagination:{
+						el:'#application_swiper_container .application_swiper-pagination'
+					},
+					effect:'flip',
+					loop:true,
+				}
 			}
 		},
 		computed:{
@@ -69,8 +110,15 @@
 		max-width 120rem
 		margin 0 auto
 		display grid
-		grid-template-columns 66% 44%
-		padding-top 8rem
+		grid-template-columns 50% 50%
+		grid-column-gap 10.2rem
+		padding-top 6rem
+		.application_swiper-pagination{
+			display none
+		}
+		#application_swiper_content{
+			display none
+		}
 		.swiper_application_scenarios_content{
 			color $navigationImgBgColor
 			.swiper_application_scenarios_title{
@@ -244,4 +292,74 @@
 		}
 	}
 }
+	@media(max-width: 1200px){
+		.swiper_application_container{
+			box-sizing border-box
+			padding 0 2rem
+			.swiper_application_content_wrap{
+				grid-column-gap 2rem
+				grid-template-columns auto 37.5rem
+			}
+		}
+	}
+	@media (max-width: 900px){
+		.swiper_application_container{
+			padding 0
+			.swiper_application_content_wrap{
+				box-sizing border-box
+				display flex
+				height 100%
+				position relative
+				.application_swiper-pagination{
+					display block
+					position absolute
+					bottom 2rem
+					left 50%
+					transform translateX(-50%)
+					/deep/.swiper-pagination-bullet{
+						margin-right 1rem
+					}
+					/deep/.swiper-pagination-bullet-active{
+						background $yellowColor
+					}
+				}
+				#application_swiper_content{
+					display block
+					height 100%
+					box-sizing border-box
+					width 100%
+					.swiper_application_scenarios_content{
+						display block
+						margin-top 10rem
+						.swiper_application_scenarios_title{
+							max-width 100%
+							text-align center
+						}
+						.swiper_application_scenarios_list_item{
+							max-width 52.8rem
+							margin-left auto
+							margin-right auto
+						}
+					}
+					.swiper_solution_content{
+						display block
+						margin-top 10rem
+						.swiper_application_solution_title{
+							max-width 100%
+						}
+						.swiper_application_solution_list_content{
+							justify-content center
+						}
+					}
+				}
+				.swiper_application_scenarios_content{
+					display none
+				}
+				.swiper_solution_content{
+					display none
+				}
+			}
+			
+		}
+	}
 </style>

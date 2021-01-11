@@ -117,5 +117,39 @@
 		}
 	}
 }
-
+@media (max-width: 1150px){
+	.about_container{
+		.about_section_container{
+			padding 3.2rem 0
+			.about_section_content{
+				padding  0 4.8rem
+				margin 0
+				.about_section_item{
+					margin-top 0
+					.section_item{
+						line-height 3.2rem
+					}
+				}
+			}
+		}
+		.memorabilia_container{
+			.memorabilia_list_content{
+				display flex
+				justify-content center
+				.memorabilia_list_container{
+					margin-right 0
+					max-width 100%
+					margin-top 5.2rem
+				}
+			}
+			.memorabilia_list_img_content{
+				flex-direction column
+				margin 0 4.8rem
+				.memorabilia_img_content{
+					width 100%
+				}
+			}
+		}
+	}
+}
 </style>

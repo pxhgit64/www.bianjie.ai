@@ -56,7 +56,7 @@
 					direction: 'horizontal',
 					// 自动切换图配置
 					autoplay: {
-						delay: 3000,
+						delay: 300000,
 						stopOnLastSlide: false,
 						disableOnInteraction: true
 					},
@@ -171,4 +171,39 @@
 		}
 	}
 }
+	@media(max-width: 1070px){
+		.swiper_product_container{
+			.swiper_product_content_wrap{
+				.swiper_content{
+					box-sizing border-box
+					padding: 0 2rem
+					.swiper-button-prev{
+						display none
+					}
+					.swiper-button-next{
+						display none
+					}
+					.product_tab_content{
+						.product_tab_content_wrap{
+							padding 1.3rem 0 2.4rem 0
+							flex-wrap wrap
+							height auto
+							.product_tab_item_content {
+								span{
+									display inline-block
+									white-space nowrap
+								}
+							}
+							@media (max-width 709px){
+								.product_tab_item_content:last-child{
+									margin-top 2.4rem
+								}
+							}
+							
+						}
+					}
+				}
+			}
+		}
+	}
 </style>

@@ -73,4 +73,18 @@
 			}
 		}
 	}
+	@media(max-width: 1050px){
+		.product_swiper_content{
+			height 49.9rem
+			.product_swiper_content_wrap{
+				padding 6rem 3.6rem 6rem 3.6rem
+				.product_swiper_left_content{
+					max-width 30rem
+					.product_content{
+						height auto
+					}
+				}
+			}
+		}
+	}
 </style>
