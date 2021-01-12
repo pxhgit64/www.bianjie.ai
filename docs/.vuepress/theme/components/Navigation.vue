@@ -50,7 +50,7 @@
 						? `${flShowSunMenu && isShowSubMenuText === item.text
 						? 'iconshouqi' : 'iconzhankai1'}` : ''}`"></i>
 					</span>
-					<router-link class="mobile_navigation_item_link" v-show="!item.index && item.link !== '/developer'&& item.link !== '/download' " :to="item.link">{{item.text}}</router-link>
+					<router-link class="mobile_navigation_item_link"  @click.native="closeMobileMenu()"  v-show="!item.index && item.link !== '/developer'&& item.link !== '/download' " :to="item.link">{{item.text}}</router-link>
 					<span v-if="item.link == '/developer'">{{item.text}}</span>
 					<template v-if="isShowSubMenuText === item.text && flShowSunMenu ">
 						<ul v-show="item.items && item.items.length > 0"
@@ -85,6 +85,10 @@
 			toHome(){
 				this.$router.push('/')
 				this.$store.commit('swiperIndex',1)
+			},
+			closeMobileMenu(){
+				this.flShowSunMenu = false
+				this.flShowMobileMenu = false
 			},
 			isShowMobileMenu(){
 				this.flShowMobileMenu = !this.flShowMobileMenu
