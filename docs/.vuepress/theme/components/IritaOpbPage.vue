@@ -77,6 +77,7 @@
 						grid-template-columns repeat(4,25%)
 						padding-left 0
 						margin 2.4rem 0 0 0
+						list-style none
 						.example_list_item{
 							line-height 1
 							a{
@@ -92,6 +93,60 @@
 			background-size 100%
 			width 100%
 			height 20rem
+		}
+	}
+	@media(max-width: 1200px){
+		.irita_opb_container{
+			.section_container{
+				padding-left 2.4rem
+				padding-right 2.4rem
+				.section_content_wrap{
+					.change_content{
+						box-sizing border-box
+						padding 0 2.4rem
+						.opb_component_container{
+							grid-template-columns auto
+						}
+					}
+					.example_content{
+						box-sizing border-box
+						padding 0 2.4rem
+						.example_list{
+							grid-template-columns repeat(3,33%)
+						}
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 768px){
+		.irita_opb_container{
+			.section_container{
+				padding-left 0
+				padding-right 0
+				.section_content_wrap{
+					.change_content{
+						box-sizing border-box
+						padding 0 2.4rem
+						.opb_component_container{
+							.opb_component_item{
+								grid-template-columns auto
+							}
+						}
+					}
+					.example_content{
+						box-sizing border-box
+						padding 0 2.4rem
+						.example_list{
+							grid-template-columns auto
+							margin-top 0
+							.example_list_item{
+								margin-top 1rem
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 

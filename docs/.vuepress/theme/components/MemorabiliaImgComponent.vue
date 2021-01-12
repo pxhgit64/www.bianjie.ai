@@ -149,13 +149,13 @@
 				.slide{
 					width  auto
 					.memorabilia_swiper_img{
-						width  auto
-						height 32rem
+						width auto
+						height 26rem
 						margin 0 2rem
 						img{
 							display block
 							height  100%
-							width auto
+							width  auto
 						}
 					}
 				}

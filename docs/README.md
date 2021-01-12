@@ -91,23 +91,28 @@
             list: [
                 {
                     iconName: icongongyinglian,
-                    content: 供应链金融
+                    content: 供应链金融,
+                    link: /application/supply
                 },
                 {
                     iconName: iconjinrongjianguan,
-                    content: 金融监管
+                    content: 金融监管,
+                    link: /application/finance
                 },
                 {
                     iconName: icondianzichufang,
-                    content: 医疗电子处方管理
+                    content: 医疗电子处方管理,
+                    link: /application/medical
                 },
                 {
                     iconName: iconchuanranbingyujing,
-                    content: 传染病预警与监控
+                    content: 传染病预警与监控,
+                    link: /application/infectious
                 },
                 {
                     iconName: iconfanxiqian,
-                    content: 加密货币反洗钱
+                    content: 加密货币反洗钱,
+                    link: /application/cryptocurrency
                 }
             ],
         }

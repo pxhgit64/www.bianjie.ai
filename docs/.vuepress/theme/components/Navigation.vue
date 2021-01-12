@@ -3,7 +3,7 @@
 		<div class="navigation_content">
 			<div class="navigation_left_container">
 				<div class="navigation_content_wrap">
-					<div class="navigation_img_content">
+					<div class="navigation_img_content" @click="toHome()">
 						<img src="../../public/logo.svg" alt="">
 					</div>
 					<ul class="navigation_list_container">
@@ -32,7 +32,7 @@
 		
 		<div class="mobile_navigation_container">
 			<div class="mobile_navigation_content">
-				<div class="mobile_navigation_logo">
+				<div class="mobile_navigation_logo" @click="toHome()">
 					<img src="../../public/logo.svg" alt="">
 				</div>
 				<div class="mobile_menu_icon" @click="isShowMobileMenu()">
@@ -50,7 +50,7 @@
 						? `${flShowSunMenu && isShowSubMenuText === item.text
 						? 'iconshouqi' : 'iconzhankai1'}` : ''}`"></i>
 					</span>
-					<router-link class="mobile_navigation_item_link" v-show="!item.index && item.link !== '/developer'&& item.link !== '/download' " :to="item.link">{{item.text}}</router-link>
+					<router-link class="mobile_navigation_item_link"  @click.native="closeMobileMenu()"  v-show="!item.index && item.link !== '/developer'&& item.link !== '/download' " :to="item.link">{{item.text}}</router-link>
 					<span v-if="item.link == '/developer'">{{item.text}}</span>
 					<template v-if="isShowSubMenuText === item.text && flShowSunMenu ">
 						<ul v-show="item.items && item.items.length > 0"
@@ -82,6 +82,14 @@
 			this.navigation = this.$site.themeConfig.nav
 		},
 		methods:{
+			toHome(){
+				this.$router.push('/')
+				this.$store.commit('swiperIndex',1)
+			},
+			closeMobileMenu(){
+				this.flShowSunMenu = false
+				this.flShowMobileMenu = false
+			},
 			isShowMobileMenu(){
 				this.flShowMobileMenu = !this.flShowMobileMenu
 			},

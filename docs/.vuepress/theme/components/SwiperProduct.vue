@@ -203,7 +203,7 @@
 				a{
 					display inline-block
 					color $whiteColor
-					padding 1.8rem 2rem
+					padding 1.8rem 1.8rem
 					line-height 2.2rem
 				}
 			}

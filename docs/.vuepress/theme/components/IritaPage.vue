@@ -133,6 +133,10 @@
 	@media (max-width: 768px){
 		.irita_container{
 			.core_container{
+				padding-top 1.6rem
+				.core_title{
+					font-size $fontSize20
+				}
 				.core_advantage_content{
 					grid-template-columns repeat(1,100%)
 				}

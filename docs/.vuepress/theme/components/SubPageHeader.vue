@@ -1,6 +1,6 @@
 <template>
 	<div class="sub_page_container">
-		<div>
+		<div class="title_content">
 			<h2 class="title">{{title}}</h2>
 			<h4 class="subtitle">{{subTitle}}</h4>
 		</div>
@@ -43,10 +43,19 @@
 	}
 	@media (max-width: 1200px){
 		.sub_page_container{
-			.title{
-				font-size 2.4rem
-				letter-spacing 0.3rem
+			.title_content {
+				box-sizing border-box
+				padding-left 2rem
+				padding-right 2rem
+				.title{
+					font-size $fontSize20
+					letter-spacing 0.4rem
+				}
+				.subtitle{
+					font-size $fontSize14
+				}
 			}
+		
 		}
 	}
 </style>
