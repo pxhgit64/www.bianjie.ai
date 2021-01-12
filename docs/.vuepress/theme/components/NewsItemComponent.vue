@@ -96,4 +96,27 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.news_item_component_content{
+			.news_item_content_wrap{
+				padding 1.6rem
+			}
+		}
+	}
+	@media (max-width: 375px){
+		.news_item_component_content{
+			.news_item_content_wrap{
+				.news_item_content{
+					.news_container{
+						.news_title{
+							width 24.8rem
+						}
+						.news_content{
+							width 24.8rem
+						}
+					}
+				}
+			}
+		}
+	}
 </style>

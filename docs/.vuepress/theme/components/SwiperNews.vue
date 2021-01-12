@@ -10,6 +10,7 @@
 					background
 					layout="prev,pager,next"
 					:total="total"
+					:pager-count="5"
 					:page-size="pageSize"
 					:current-page="pageNum"
 					@current-change="changeCurrentPage"
@@ -46,7 +47,7 @@
 			innerWidth(innerWidth){
 				let changeStyleNodeWidth = 768
 				if(innerWidth < changeStyleNodeWidth){
-					this.pageSize = 3
+					this.pageSize = 2
 					this.newsListData = this.pageNation(this.changeData)
 					this.currentPageData = this.newsListData[this.pageNum - 1]
 				}else {
@@ -137,4 +138,20 @@
 		}
 	}
 }
+	@media (max-width: 768px){
+		.swiper_news_container{
+			.swiper_news_content_wrap{
+				padding-top 3.2rem
+				.swiper_news_content_title{
+					font-size $fontSize20
+					letter-spacing 0.1rem
+					font-weight $fontWeight600
+				}
+				.swiper_news_list_content{
+					grid-template-columns 100%
+					margin-top 2rem
+				}
+			}
+		}
+	}
 </style>

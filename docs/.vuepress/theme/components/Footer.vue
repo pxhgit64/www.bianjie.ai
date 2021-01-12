@@ -58,4 +58,13 @@
 		
 		}
 	}
+	@media (max-width: 680px){
+		.footer_container{
+			flex-direction column
+			height 8rem
+			.copyright_content{
+				margin-right 0
+			}
+		}
+	}
 </style>

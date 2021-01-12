@@ -41,7 +41,7 @@
 				<el-input v-model="cooperationDemand"
 				          :autosize="{
 				            minRows:2,
-				            maxRows: 6
+				            maxRows: 3
 				          }"
 				          type="textarea"
 				          maxlength="100"
@@ -316,6 +316,45 @@
 				.cooperation_warning_label{
 					font-size 0.12rem
 					margin-bottom 0.8rem
+				}
+				.cooperation_button{
+					margin-top 0
+					display flex
+					justify-content center
+				}
+			}
+		}
+	}
+	@media (max-width: 375px){
+		.cooperation_application_container{
+			padding 1.2rem 0.9rem
+			margin-top 2rem
+			.cooperation_application_content_wrap{
+				padding-top 0
+				height auto
+				padding-bottom 0
+				.cooperation_ipt_content{
+					grid-template-columns 14rem auto
+					.cooperation_ipt_label{
+						font-size 1.6rem
+						font-weight $fontWeight600
+					}
+					/deep/.el-textarea{
+						.el-textarea__inner{
+							font-size $fontSize14
+						}
+					}
+					/deep/.el-input{
+						.el-input__inner{
+							height 2.4rem
+						}
+					}
+				}
+				.cooperation_warning_label{
+					line-height 1
+					font-size 0.12rem
+					margin-bottom 0.8rem
+					padding-left 14rem
 				}
 				.cooperation_button{
 					margin-top 0
