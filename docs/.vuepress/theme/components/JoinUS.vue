@@ -3,14 +3,16 @@
 		<subpage_component :title="joinUsData.pageTitle" :sub-title="' '"></subpage_component>
 		<div class="recruitment_container">
 			<div class="recruitment_content_container">
-				<ul class="recruitment_job_container">
-					<li class="recruitment_job_item"
-					    :class="activeIndex === index ? 'active_style' : ''"
-					    v-for="(item,index) in joinUsData.jobList"
-					    :key="index" @click="selectJob(index,item)">
-						{{item.jobName}}
-					</li>
-				</ul>
+				<overlay-scrollbars class="scroll_content" >
+					<ul class="recruitment_job_container">
+						<li class="recruitment_job_item"
+						    :class="activeIndex === index ? 'active_style' : ''"
+						    v-for="(item,index) in joinUsData.jobList"
+						    :key="index" @click="selectJob(index,item)">
+							{{item.jobName}}
+						</li>
+					</ul>
+				</overlay-scrollbars>
 				<div class="recruitment_content">
 					<h2 class="job_name">{{jobData.jobName}}</h2>
 					<p class="duty_title">{{jobData.dutyTitle}}</p>
@@ -76,8 +78,6 @@
 		height 100%
 		
 		.recruitment_container {
-			height 100%
-			
 			.recruitment_content_container {
 				max-width 120rem
 				margin 0 auto
@@ -85,7 +85,9 @@
 				padding-top 4.9rem
 				display grid
 				grid-template-columns 25.4rem auto
-				
+				.scroll_content{
+					height 100%
+				}
 				.recruitment_job_container {
 					list-style none
 					margin 0
@@ -98,6 +100,7 @@
 						margin-top 4.8rem
 						font-weight $fontWeight600
 						cursor pointer
+						white-space nowrap
 					}
 					.active_style{
 						color $buttonColor
@@ -150,6 +153,73 @@
 			width 100%
 			background url("../../public/opb_bg.png") no-repeat center center
 			background-size cover
+		}
+	}
+	@media (max-width: 768px){
+		.join_us_container{
+			.recruitment_container{
+				.recruitment_content_container{
+					grid-template-columns auto
+					.scroll_content{
+						height 4rem
+						/deep/.os-scrollbar{
+							display none
+						}
+						border-bottom 0.1rem solid $grayColor
+					}
+					.recruitment_job_container{
+						display flex
+						width 100%
+						border-right none
+						.recruitment_job_item{
+							margin-top 0
+							margin-right 1.6rem
+						}
+					}
+					.recruitment_content{
+						padding-left 4.8rem
+						padding-right 4.8rem
+					}
+				}
+			}
+		}
+	}
+	@media (max-width: 500px){
+		.join_us_container{
+			.recruitment_container{
+				.recruitment_content_container{
+					grid-template-columns auto
+					padding-top 1.6rem
+					
+					.recruitment_job_container{
+						display flex
+						width 100%
+						border-right none
+						.recruitment_job_item{
+							margin-top 0
+							margin-right 1.6rem
+						}
+					}
+					.recruitment_content{
+						padding 1.5rem 1.2rem
+						.job_name{
+							margin-top 0
+							font-size $fontSize20
+							letter-spacing 0.1rem
+							padding-bottom 0
+						}
+						.duty_title{
+							margin 1.6rem 0 1.2rem 0
+						}
+						.technical_ability_Title{
+							margin 1.6rem 0 1.2rem 0
+						}
+						.mail_tip_content{
+							margin-top 1.6rem
+						}
+					}
+				}
+			}
 		}
 	}
 </style>
