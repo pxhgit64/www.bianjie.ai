@@ -132,6 +132,7 @@
 			margin-top 6.8rem
 			position relative
 			.product_swiper_pagination_content{
+				display none
 				position absolute
 				left 50%
 				transform translateX(-50%)
@@ -256,6 +257,9 @@
 				}
 				#product_swiper_content{
 					margin-top 2rem
+					.product_swiper_pagination_content{
+						display block
+					}
 					/deep/.swiper-container{
 						.swiper-wrapper{
 							.swiper-slide{
