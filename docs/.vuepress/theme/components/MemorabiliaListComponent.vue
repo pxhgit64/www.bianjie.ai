@@ -81,6 +81,7 @@
 					.iconfont{
 						position relative
 						left -0.9rem
+						z-index 2
 					}
 					.font_color_yellow{
 						color $yellowColor !important

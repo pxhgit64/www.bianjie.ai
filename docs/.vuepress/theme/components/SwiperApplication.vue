@@ -173,7 +173,7 @@
 	background-size cover
 	width 100%
 	height 100%
-	padding-top 8rem
+	padding-top 6rem
 	.swiper_application_content_wrap{
 		max-width 120rem
 		margin 0 auto
@@ -244,7 +244,7 @@
 					}
 				}
 				.item_content{
-					margin-top 0.4rem
+					margin-top 2.4rem
 					max-width 52.8rem
 					font-size $fontSize16
 					line-height 2.4rem
@@ -394,7 +394,7 @@
 	@media(max-width: 1200px){
 		.swiper_application_container{
 			box-sizing border-box
-			padding 0 2rem
+			padding 6rem 2rem 0 2rem
 			.swiper_application_content_wrap{
 				grid-column-gap 2rem
 				grid-template-columns auto 37.5rem

@@ -76,6 +76,7 @@
 					border 0.01rem solid $grayColor
 					border-radius 0.4rem !important
 					background $whiteColor
+					align-items center
 					.swiper_advantage_list_item_img_content{
 						width 8.7rem
 						height 10rem

@@ -173,7 +173,9 @@
 						border-right none
 						.recruitment_job_item{
 							margin-top 0
-							margin-right 1.6rem
+						}
+						.recruitment_job_item:nth-last-child{
+							padding-right 2rem
 						}
 					}
 					.recruitment_content{
@@ -198,6 +200,9 @@
 						.recruitment_job_item{
 							margin-top 0
 							margin-right 1.6rem
+						}
+						.recruitment_job_item:last-child{
+							padding-right 2rem
 						}
 					}
 					.recruitment_content{
