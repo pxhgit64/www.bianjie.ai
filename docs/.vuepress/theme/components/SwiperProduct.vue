@@ -12,6 +12,7 @@
 						<product_swiper_component :product-data="item"></product_swiper_component>
 					</swiper-slide>
 				</swiper>
+				<div  class="product_swiper_pagination_content"></div>
 				<div class="swiper-button-prev product_swiper_prev_button"></div>
 				<div class="swiper-button-next product_swiper_next_button"></div>
 				<div class="product_tab_content">
@@ -27,7 +28,11 @@
 					
 				</div>
 			</div>
-			<div class="swiper_github_link_content"></div>
+			<div class="swiper_github_link_content">
+				<div class="github_link_button_content">
+					<a :href="githubLinkButton.link">{{githubLinkButton.label}} <i class="iconfont iconqianwang"></i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -46,6 +51,7 @@
 				productionSwiperOption: {
 					// 分页器配置
 					pagination: {
+						el: '#product_swiper_content .product_swiper_pagination_content',
 						clickable: true,
 						progressbarOpposite: true,
 					},
@@ -86,6 +92,9 @@
 			},
 			footMenuList(){
 				return this.$page.frontmatter.productContent.footMenuList
+			},
+			githubLinkButton(){
+				return this.$page.frontmatter.productContent.githubButtonContent
 			}
 		},
 		mounted(){
@@ -122,6 +131,19 @@
 		.swiper_content{
 			margin-top 6.8rem
 			position relative
+			.product_swiper_pagination_content{
+				position absolute
+				left 50%
+				transform translateX(-50%)
+				bottom 2rem
+				z-index 1
+				/deep/.swiper-pagination-bullet{
+					margin-right 1rem
+				}
+				/deep/.swiper-pagination-bullet-active{
+					background $yellowColor
+				}
+			}
 			.product_swiper_prev_button{
 				background url("../../public/arrow_left.png")
 				background-size 100% 100%
@@ -167,6 +189,23 @@
 				}
 				
 				
+			}
+		}
+		.swiper_github_link_content{
+			margin-top 4.8rem
+			display flex
+			justify-content center
+			.github_link_button_content{
+				max-width 27.7rem
+				border-radius 0.4rem
+				background $iconColor
+				font-size $fontSize16
+				a{
+					display inline-block
+					color $whiteColor
+					padding 1.8rem 2rem
+					line-height 2.2rem
+				}
 			}
 		}
 	}
@@ -226,10 +265,10 @@
 									box-sizing border-box
 									.product_swiper_content_wrap{
 										padding 0
-										grid-template-columns auto
+										grid-template-columns auto 24rem
 										grid-template-rows none
 										.product_swiper_left_content{
-											
+											margin-right 2rem
 											.product_swiper_card_title{
 												font-size $fontSize16
 												font-weight $fontWeight600
@@ -243,9 +282,9 @@
 												font-size $fontSize16
 											}
 										}
-										.product_swiper_right_content{
+										/*.product_swiper_right_content{
 											display none
-										}
+										}*/
 									}
 								}
 							}
@@ -258,4 +297,29 @@
 			}
 		}
 	}
+@media (max-width: 600px){
+	.swiper_product_container{
+		.swiper_product_content_wrap{
+			#product_swiper_content{
+				/deep/.swiper-container{
+					.swiper-wrapper{
+						.swiper-slide{
+							.product_swiper_content{
+								.product_swiper_content_wrap{
+									grid-template-columns auto auto
+									.product_swiper_right_content{
+										display none
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.swiper_github_link_content{
+				margin-top 0.8rem
+			}
+		}
+	}
+}
 </style>

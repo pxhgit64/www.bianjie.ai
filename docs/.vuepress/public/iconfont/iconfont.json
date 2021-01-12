@@ -6,6 +6,34 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "19355749",
+      "name": "前往",
+      "font_class": "qianwang",
+      "unicode": "e67f",
+      "unicode_decimal": 59007
+    },
+    {
+      "icon_id": "19355744",
+      "name": "收起",
+      "font_class": "shouqi",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "19355728",
+      "name": "展开",
+      "font_class": "zhankai1",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "19350494",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e676",
+      "unicode_decimal": 58998
+    },
+    {
       "icon_id": "19293804",
       "name": "IDE支持",
       "font_class": "IDEzhichi",

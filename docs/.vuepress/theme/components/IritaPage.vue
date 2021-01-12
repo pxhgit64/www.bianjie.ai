@@ -118,4 +118,25 @@
 			}
 		}
 	}
+	@media (max-width: 1200px){
+		.irita_container{
+			.irita_content{
+			
+			}
+			.core_container{
+				.core_advantage_content{
+					grid-template-columns repeat(2,50%)
+				}
+			}
+		}
+	}
+	@media (max-width: 768px){
+		.irita_container{
+			.core_container{
+				.core_advantage_content{
+					grid-template-columns repeat(1,100%)
+				}
+			}
+		}
+	}
 </style>

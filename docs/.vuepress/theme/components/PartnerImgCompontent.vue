@@ -45,22 +45,30 @@
 		.partner_img_content_wrap{
 			max-width 120rem
 			margin 0 auto
-			display flex
-			flex-direction row
-			align-items flex-start
-			flex-wrap wrap
+			display grid
+			grid-template-columns repeat(4,21.6%)
+			grid-column-gap 5rem
+			grid-row-gap 6rem
 			list-style none
 			box-sizing border-box
-			padding 4.8rem 2rem
+			padding 4.8rem 4rem
 			.partner_img_item{
-				width 27.8rem
-				height 10rem
+				width 100%
+				height 4.8rem
 				display flex
 				align-items center
 				justify-content center
-				img{
+				a{
 					width 100%
-					height 4rem
+					display flex
+					justify-content center
+					height 100%
+					img{
+						height 100%
+					}
+				}
+				img{
+					height 100%
 				}
 			}
 		}
@@ -73,12 +81,50 @@
 			.partner_img_content_wrap{
 				margin 0 auto
 				display grid
+				box-sizing border-box
 				grid-auto-flow row;
-				grid-template-columns repeat(auto-fill,22rem);
-				grid-row-gap 6rem
+				grid-template-columns repeat(4,23%);
+				grid-row-gap 4rem
+				grid-column-gap 2rem
+			}
+		}
+	}
+	@media (max-width: 768px){
+		.partner_img_container{
+			margin-left 2rem
+			margin-right 2rem
+			width auto
+			height 63.6rem
+			.partner_img_content_wrap{
+				margin 0 auto
+				grid-template-columns repeat(3,30%);
+			}
+		}
+	}
+	@media (max-width: 640px){
+		.partner_img_container{
+			margin-left 2rem
+			margin-right 2rem
+			width auto
+			margin-top 2rem
+			height 42rem
+			.partner_img_content_wrap{
+				grid-template-columns repeat(2,50%);
+				grid-row-gap 2rem
+				grid-column-gap 2rem
+				padding-top 1.6rem
 				.partner_img_item{
 					width 100%
-					height 4rem
+					height 2.4rem
+					a{
+						height 100%
+						img{
+							height 100%
+						}
+					}
+					img{
+						height 100%
+					}
 				}
 			}
 		}

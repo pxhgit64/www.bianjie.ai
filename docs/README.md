@@ -33,7 +33,7 @@
             {
                 iconName: iconIRITA,
                 title: 联盟链 IRITA 系列,
-                content: 支持下一代分布式商业系统，自主可控，支持国密，可选功能模块化配置，为企业和组织快速实现联盟链搭建和部署，支持与链外原有IT系统和应用实现跨链集成。,
+                content: 支持下一代分布式商业系统，自主可控，支持国密，可选功能模块化配置，为企业和组织快速实现联盟链搭建和部署，支持与链外原有 IT 系统和应用实现跨链集成。,
                 more: 更多,
                 moreLink: /products/irita.html,
             },
@@ -59,7 +59,11 @@
                 moreLink: ,
             }
         ],
-        footMenuList:[IRITA,IRITA HUB,IRITA OPB,咨询和技术服务],
+        footMenuList: [IRITA,IRITA HUB,IRITA OPB,咨询和技术服务],
+        githubButtonContent: {
+            label: 联盟链 IRITA 开源社区 GitHub,
+            link: https://github.com/bianjieai/irita
+        }
     },
     applicationContent:{
         scenarios: {

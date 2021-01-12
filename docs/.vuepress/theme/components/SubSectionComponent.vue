@@ -46,4 +46,10 @@
 			}
 		}
 	}
+	@media (max-width: 1200px){
+		.irita_content{
+			padding 2.4rem !important
+			box-sizing border-box
+		}
+	}
 </style>
