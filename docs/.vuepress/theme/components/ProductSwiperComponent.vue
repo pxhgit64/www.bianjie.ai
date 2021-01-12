@@ -51,8 +51,9 @@
 				}
 				.product_content{
 					margin-top 3.2rem
-					line-height 4rem
-					font-size $fontSize20
+					line-height 3rem
+					font-size $fontSize16
+					letter-spacing 0.1rem
 					height 20rem
 				}
 				.product_detail_link{
