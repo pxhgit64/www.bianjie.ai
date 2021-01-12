@@ -74,7 +74,7 @@
 				}
 				.news_date{
 					font-size $fontSize14
-					color $iconColor
+					color $grayColor
 					margin-top 0.3rem
 				}
 			}

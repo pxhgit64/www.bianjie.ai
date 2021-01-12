@@ -26,7 +26,7 @@
 			<div class="navigation_right_content">
 				<div  class="navigation_right_content_item">{{developer}}</div>
 				<span class="line"></span>
-				<RouterLink class="navigation_right_content_item" :to="`/download`" target="_blank" rel="noreferrer noopener"><div >{{download}}</div></RouterLink>
+				<router-link class="navigation_right_content_item" :to="`/download`" target="_blank" rel="noreferrer noopener"><div >{{download}}</div></router-link>
 			</div>
 		</div>
 		
