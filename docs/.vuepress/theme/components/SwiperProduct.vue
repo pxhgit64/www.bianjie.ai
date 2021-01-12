@@ -119,7 +119,7 @@
 		padding-top 6rem
 		margin  0 auto
 		.swiper_product_title_content{
-			margin-top 8rem
+			margin-top 6rem
 			.swiper_product_title{
 				text-align center
 				color $fontColor
@@ -129,7 +129,7 @@
 			}
 		}
 		.swiper_content{
-			margin-top 6.8rem
+			margin-top 5.6rem
 			position relative
 			.product_swiper_pagination_content{
 				display none
@@ -161,7 +161,6 @@
 			}
 			.product_tab_content{
 				box-sizing border-box
-				padding-top 0.9rem
 				background $whiteColor
 				.product_tab_content_wrap{
 					height 6.8rem
@@ -193,7 +192,7 @@
 			}
 		}
 		.swiper_github_link_content{
-			margin-top 4.8rem
+			margin-top 2.4rem
 			display flex
 			justify-content center
 			.github_link_button_content{

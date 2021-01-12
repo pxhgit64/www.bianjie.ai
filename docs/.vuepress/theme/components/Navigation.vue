@@ -26,7 +26,7 @@
 			<div class="navigation_right_content">
 				<div  class="navigation_right_content_item">{{developer}}</div>
 				<span class="line"></span>
-				<RouterLink class="navigation_right_content_item" :to="'/download'" target="_blank" rel="noreferrer noopener"><div >{{download}}</div></RouterLink>
+				<RouterLink class="navigation_right_content_item" :to="`/download`" target="_blank" rel="noreferrer noopener"><div >{{download}}</div></RouterLink>
 			</div>
 		</div>
 		
@@ -56,7 +56,7 @@
 						<ul v-show="item.items && item.items.length > 0"
 						    class="mobile_sub_menu">
 							<li class="mobile_sub_menu_item" v-for="v in item.items">
-								<span @click.stop="toPage(v.link)" >{{v.text}}</span>
+								<span @click="toPage(v.link)" >{{v.text}}</span>
 							</li>
 						</ul>
 					</template>

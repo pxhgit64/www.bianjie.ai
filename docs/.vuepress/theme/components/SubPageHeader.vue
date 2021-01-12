@@ -34,7 +34,7 @@
 		.title{
 			font-size $fontSize30
 			letter-spacing 0.5rem
-			font-weight $fontWeight600
+			font-weight 400
 			border-bottom none
 		}
 		.subtitle{

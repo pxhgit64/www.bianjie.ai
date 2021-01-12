@@ -99,7 +99,7 @@
 		.swiper_news_content_wrap{
 			max-width 103.6rem
 			margin 0 auto
-			padding-top 8rem
+			padding-top 6rem
 			.swiper_news_content_title{
 				text-align center
 				font-size $fontSize30
@@ -113,7 +113,7 @@
 				grid-template-columns 50% 50%
 				grid-row-gap 2.4rem
 				grid-column-gap 3.6rem
-				margin-top 6.8rem
+				margin-top 5.4rem
 			}
 			.pagination{
 				display flex

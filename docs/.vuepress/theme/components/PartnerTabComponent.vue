@@ -46,7 +46,7 @@
 		.partner_tab_content_wrap{
 			display flex
 			padding  0 3.2rem
-			padding-top 8rem
+			padding-top 6rem
 		}
 		.partner_tab_icon_content{
 			flex 1

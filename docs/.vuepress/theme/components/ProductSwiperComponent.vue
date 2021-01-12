@@ -35,12 +35,12 @@
 
 <style scoped lang="stylus">
 	.product_swiper_content{
-		height 40rem
+		height 38.2rem
 		background $whiteColor
 		margin 0 auto
 		.product_swiper_content_wrap{
 			box-sizing border-box
-			padding 6rem 8rem 0 8rem
+			padding 4.8rem 8rem 0 8rem
 			display grid
 			grid-template-columns 40rem auto
 			grid-template-rows repeat(1, 100%)
