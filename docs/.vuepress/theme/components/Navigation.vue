@@ -3,7 +3,7 @@
 		<div class="navigation_content">
 			<div class="navigation_left_container">
 				<div class="navigation_content_wrap">
-					<div class="navigation_img_content">
+					<div class="navigation_img_content" @click="toHome()">
 						<img src="../../public/logo.svg" alt="">
 					</div>
 					<ul class="navigation_list_container">
@@ -32,7 +32,7 @@
 		
 		<div class="mobile_navigation_container">
 			<div class="mobile_navigation_content">
-				<div class="mobile_navigation_logo">
+				<div class="mobile_navigation_logo" @click="toHome()">
 					<img src="../../public/logo.svg" alt="">
 				</div>
 				<div class="mobile_menu_icon" @click="isShowMobileMenu()">
@@ -82,6 +82,10 @@
 			this.navigation = this.$site.themeConfig.nav
 		},
 		methods:{
+			toHome(){
+				this.$router.push('/')
+				this.$store.commit('swiperIndex',1)
+			},
 			isShowMobileMenu(){
 				this.flShowMobileMenu = !this.flShowMobileMenu
 			},

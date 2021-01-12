@@ -62,4 +62,18 @@
 			}
 		}
 	}
+	@media (max-width: 768px){
+		.opb_component_container{
+			grid-row-gap 3.2rem
+			.opb_component_item{
+				grid-template-columns auto
+				justify-items center
+				grid-row-gap 1.6rem
+			}
+			.opb_component_item_section{
+				text-align center
+				
+			}
+		}
+	}
 </style>

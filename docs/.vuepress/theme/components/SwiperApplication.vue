@@ -23,7 +23,7 @@
 					<div class="list_icon_content">
 						<icon-component :icon-name="item.iconName"></icon-component>
 					</div>
-					<div class="list_arrow_content">
+					<div class="list_arrow_content" @click="toApplication(item.link)">
 						<span class="item_content">{{item.content}}</span>
 						<span class="iconfont iconjiantou"></span>
 					</div>
@@ -56,7 +56,7 @@
 							<div class="list_icon_content">
 								<icon-component :icon-name="item.iconName"></icon-component>
 							</div>
-							<div class="list_arrow_content">
+							<div class="list_arrow_content" @click="toApplication(item.link)">
 								<span class="item_content">{{item.content}}</span>
 								<span class="iconfont iconjiantou"></span>
 							</div>
@@ -91,7 +91,7 @@
 							<div class="list_icon_content">
 								<icon-component :icon-name="item.iconName"></icon-component>
 							</div>
-							<div class="list_arrow_content">
+							<div class="list_arrow_content" @click="toApplication(item.link)">
 								<span class="item_content">{{item.content}}</span>
 								<span class="iconfont iconjiantou"></span>
 							</div>
@@ -145,6 +145,12 @@
 			window.onresize = (e) => {
 				this.innerWidth = e.currentTarget.innerWidth
 			}
+		},
+		methods:{
+			toApplication(link){
+				this.$router.push(link)
+			}
+			
 		},
 		computed:{
 			scenariosTitle(){
@@ -280,6 +286,7 @@
 					border-style solid
 					border-radius 0.4rem
 					width 26.6rem
+					cursor pointer
 					.item_content{
 						display inline-block
 						padding 1.4rem 4.3rem 1.4rem 1.8rem
