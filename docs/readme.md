@@ -203,7 +203,7 @@
                 label: 行业协同
             },
             {
-                iconName: iconyewuhuoban,
+                iconName: iconhezuoshenqing,
                 label: 合作申请
             }
         ],
