@@ -185,6 +185,9 @@
 					}
 					.swiper_active{
 						background $navigationBgColor1
+						span{
+							color $buttonColor
+						}
 					}
 				}
 				

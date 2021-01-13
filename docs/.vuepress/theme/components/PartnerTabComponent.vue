@@ -61,6 +61,7 @@
 				font-size $fontSize30
 				color $fontColor45
 				cursor pointer
+				font-weight $fontWeight600
 			}
 			.active_style{
 				color $fontColor

@@ -85,6 +85,9 @@
 						height auto
 					}
 				}
+				.product_swiper_right_content{
+					min-height 31rem
+				}
 			}
 		}
 	}

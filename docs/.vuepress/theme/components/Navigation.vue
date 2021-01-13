@@ -182,6 +182,7 @@
 							z-index 10
 							a{
 								color $whiteColor
+								font-weight initial
 							}
 							span{
 								white-space nowrap
@@ -200,12 +201,12 @@
 								list-style none
 								background $whiteColor
 								box-sizing border-box
-								padding 1.2rem 0
+								padding 0.2rem 0
 								border-radius 0 0 0.2rem 0.2rem
 								border 0.1rem solid $grayColor
 								.sub_menu_item{
 									line-height 1
-									padding 0.5rem 1.2rem
+									padding 1rem 1.2rem
 									white-space nowrap
 									span{
 										color $fontColor
