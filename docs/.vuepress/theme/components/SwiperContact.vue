@@ -65,6 +65,8 @@
 				flex 1
 				.bian_jie_log_content{
 					max-width 30.6rem
+					height: 10rem
+					margin-bottom 4.7rem
 				}
 				.contact_content{
 					border-top 0.1rem solid $whiteColor25
@@ -117,7 +119,7 @@
 						font-size $fontSize16
 						letter-spacing 0.2rem
 						color $whiteColor
-						margin-top 1.6rem
+						margin-top 3.4rem
 					}
 				}
 			}

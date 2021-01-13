@@ -121,70 +121,70 @@
         title: 动态资讯,
         list: [
             {
-                imageName: bsn.webp,
+                imageName: default.jpg,
                 title: 首批 BSN 跨链服务正式上线，已加入测试网供开发者体验,
                 date: 2020/11/09,
                 content: 边界智能、分布科技与区块链服务网络 BSN 达成战略合作，于 2020 年 10 月 31 日，在 BSN 跨链通信枢纽（Interchain Communications Hub）中各自适配完成了 IRITA Hub 和 Poly Enterprise 这两种跨链服务并在 BSN 测试网上线。,
                 link: https://mp.weixin.qq.com/s/M-AW4M1dFFHxfy7L-mbRjA
             },
             {
-                imageName: irita_hub.webp,
+                imageName: irita_hub.jpg,
                 title: IRITA Hub 跨链服务枢纽成功上线 BSN 平台,
                 date: 2020/10/31,
                 content: 边界智能打造的 IRITA Hub 跨链服务枢纽加入 BSN 跨链服务枢纽（ICH）并正式上线。IRITA Hub 是边界智能自主研发的 IRITA 联盟链产品线中专注跨链服务的产品，为打造 BSN 成为「全球性区块链互联网」提供重要的技术基础。,
                 link: https://mp.weixin.qq.com/s/nDQvQLaGdHqjBgTZnXEEXw,
             },
             {
-                imageName: innovation_award.webp,
+                imageName: innovation_award.jpg,
                 title: 边界智能荣获「2020 中国区块链技术创新典型企业」奖项,
                 date: 2020/10/26,
                 content: 边界智能荣登《2020 中国区块链技术创新典型企业名录》。本次榜单由赛迪（青岛）区块链研究院在「链上未来·2020 区块链产业发展峰会」中颁布。,
                 link: https://mp.weixin.qq.com/s/H5tMcOKhpz64_h1oF3G1xw
             },
             {
-                imageName: jiangxi_bsn.webp,
+                imageName: jiangxi_bsn.jpg,
                 title: 边界智能获授江西移动 BSN「金牌合作伙伴」，联合创始人曹恒于大会发表主题演讲,
                 date: 2020/09/30,
                 content: 边界智能获授江西移动 BSN「金牌合作伙伴」，联合创始人曹恒发表主题为《IRITA Hub：新基建中的跨链服务枢纽——打造 BSN 支持隐私保护的跨链服务基础设施》的演讲。,
                 link: https://mp.weixin.qq.com/s/88013Tp5RMP2wdJHYk9vQw
             },
             {
-                imageName: zc.webp,
+                imageName: zc.jpg,
                 title: 边界智能与中诚区块链研究院达成战略合作,
                 date: 2020/09/15,
                 content: 边界智能与中诚区块链研究院建立了战略合作关系，将聚焦区块链“产、学、研”领域，将围绕央行数字货币（CBDC），证券化通证发行（STO），大数据，以及企业区块链应用等方面展开合作。,
                 link: https://mp.weixin.qq.com/s/t-VkHcTWrvmr0jNaO__uuQ
             },
             {
-                imageName: changsanjiao.png,
+                imageName: changsanjiao.jpg,
                 title: 边界智能创始人曹恒受邀出席 2020 长三角区块链技术与产业创新大会,
                 date: 2020/07/15,
                 content: 边界智能创始人曹恒受邀出席 2020 长三角区块链技术与产业创新大会，在大会唯一的圆桌论坛上与业界大咖们围绕《区块链产业发展机遇和挑战》展开讨论。,
                 link: https://mp.weixin.qq.com/s/LkQBSep6ZIroNrXwaspz7A
             },
             {
-                imageName: league.webp,
+                imageName: league.jpg,
                 title: 边界智能加入区块链服务网络发展联盟,
                 date: 2020/07/05,
                 content: 2020 年 7 月 5 日，边界智能正式成为 BSN 发展联盟的成员单位。此次公布的是自中国移动、中国联通、中国电信、人民网、百度、银联、民生银行等相继加入以来的第三批入盟成员单位。,
                 link: https://mp.weixin.qq.com/s/iVPY8m1_rfFJpsD9TEwx9A
             },
             {
-                imageName: chain_link.webp,
+                imageName: chain_link.jpg,
                 title: BSN、IRITA 和 Chainlink 达成共同建立 BSN 跨链和预言机服务的合作,
                 date: 2020/06/30,
                 content: IRISnet 将通过 IRITA 跨链服务枢纽支持 BSN 集成 Chainlink 预言机，共同为 BSN 的开发和发展做出重大贡献，推动区块链应用模式转型并在中国乃至世界范围更快增长与普及。,
                 link: https://mp.weixin.qq.com/s/GLKMtUprscz4JvPpE0OsnQ
             },
             {
-                imageName: changsanjiao_application.png,
+                imageName: changsanjiao_application.jpg,
                 title: 边界智能荣获 2020 长三角（上海）区块链应用创新大赛奖项,
                 date: 2020/06/23,
                 content: 2020 年 6 月 21 日，由上海市科技创业中心、杨浦区科学技术委员会、上海区块链技术协会主办的 2020 长三角（上海）区块链应用创新大赛决赛圆满落下帷幕。边界智能历经海选和复赛，成功突围进入决赛。在 100 多家参赛的企业及团队项目中，边界的参赛方案《可跨链与保护数据隐私的供应链金融区块链平台》在决赛中排名前 6，于公共服务类的应用场景中排名最为靠前。,
                 link: https://mp.weixin.qq.com/s/6EcAqwMWq7QSjO90s12Yyw
             },
             {
-                imageName: yizhengtong.png,
+                imageName: yizhengtong.jpg,
                 title: 边界智能与南京壹证通一同推动区块链+可信身份的企业服务丨战略合作,
                 date: 2020/05/28,
                 content: 近日，边界智能与南京壹证通达成了战略合作。双方本着互惠互利、诚信合作、共同发展的原则，将从区块链及安全身份认证领域发挥各自的优势，在身份服务、数字证书、时间戳、底层区块链技术等方面进行合作，大力推动区块链技术结合可信身份，一起推进创新技术落地应用的实现，创造商业价值去服务实体经济。,
