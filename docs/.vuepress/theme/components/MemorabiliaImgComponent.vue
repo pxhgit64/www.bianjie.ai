@@ -135,6 +135,7 @@
 					justify-content center
 					img{
 						width  100%
+						height 100%
 					}
 				}
 			}

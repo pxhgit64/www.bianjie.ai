@@ -71,6 +71,7 @@
 					font-size $fontSize14
 					margin-top 1.2rem
 					line-height 2rem
+					color $navigationImgBgColor
 				}
 				.news_date{
 					font-size $fontSize14
