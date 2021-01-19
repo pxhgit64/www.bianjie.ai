@@ -16,21 +16,21 @@
 				<div class="recruitment_content">
 					<h2 class="job_name">{{jobData.jobName}}</h2>
 					<p class="duty_title">{{jobData.dutyTitle}}</p>
-					<ol class="duty_list_content">
+					<ul class="duty_list_content">
 						<li class="duty_list_item"
 						    v-for="(item,index) in jobData.duty"
 						    :key="index">
 							{{item.item}}
 						</li>
-					</ol>
+					</ul>
 					<p class="technical_ability_Title">{{jobData.technicalAbilityTitle}}</p>
-					<ol class="technical_ability_list_content">
+					<ul class="technical_ability_list_content">
 						<li class="technical_ability_item"
 						    v-for="(item,index) in jobData.technicalAbility"
 						    :key="index">
 							{{item.item}}
 						</li>
-					</ol>
+					</ul>
 					<p class="mail_tip_content">
 						{{joinUsData.contact}}
 					</p>
@@ -127,8 +127,11 @@
 						margin-bottom 2.4rem
 					}
 					.duty_list_content{
+						font-size $fontSize16
 						color $navigationImgBgColor75
-						
+						.duty_list_item{
+							font-size $fontSize16
+						}
 					}
 					.technical_ability_Title{
 						margin-top 3.6rem
