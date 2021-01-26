@@ -2,7 +2,7 @@
 	<div class="swiper_partner_container">
 		<div class="swiper_partner_content_wrap">
 			<partner_tab_component></partner_tab_component>
-			<partner_img_component v-show="$store.state.partnerActiveIndex !== 2 " :img-list="imgArray"></partner_img_component>
+			<partner_img_component v-show="$store.state.partnerActiveIndex !== 2 " :img-list="imgArray" :tabIndex="$store.state.partnerActiveIndex"></partner_img_component>
 			<cooperation-mail-component v-show="$store.state.partnerActiveIndex === 2 "></cooperation-mail-component>
 		</div>
 	</div>
