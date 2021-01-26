@@ -60,30 +60,9 @@
 						progressbarOpposite: true,
 					},
 					mousewheel: true,
-					
-					// 设定初始化时slide的索引
-					initialSlide: 0,
-					//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)
+					touchStartForcePreventDefault : true,
 					direction: 'vertical',
-					// 自动切换图配置
-					/*autoplay: {
-						delay: 5000,
-						stopOnLastSlide: false,
-						disableOnInteraction: true
-					},*/
-					// 环状轮播
-					loop: false,
-					slidesPerView: 'auto',
-					loopedSlides: 3,
-					loopAdditionalSlides: 0,
-					// 一个屏幕展示的数量
-					// 间距
-					// spaceBetween: 26,
-					// 修改swiper自己或子元素时，自动初始化swiper
-					observer: true,
-					// 修改swiper的父元素时，自动初始化swiper
-					observeParents: true,
-					// 箭头配置
+					slidesPerView: 1,
 				}
 			}
 		},
@@ -117,6 +96,16 @@
 				this.swiperObj = this.swiper
 			},)
 	
+		},
+		methods:{
+			touchCapable() {
+				return (
+					'ontouchstart' in window||
+					(window.DocumentTouch && document instanceof window.DocumentTouch) ||
+					navigator.maxTouchPoints > 0 ||
+					window.navigator.msMaxTouchPoints > 0
+				)
+			}
 		}
 	}
 </script>

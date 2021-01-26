@@ -5,9 +5,11 @@
 			    v-for="(item,index) in imgArr"
 			    :key="index">
 				<a v-show="item.link" :href="item.link" target="_blank" rel="noreferrer noopener">
-					<img :src="$withBase(`/${item.imageName}`)" alt="">
+					<img v-if="tabIndex === 0" :src="$withBase(`/business/${item.imageName}`)" alt="">
+					<img v-if="tabIndex === 1" :src="$withBase(`/industryCollaboration/${item.imageName}`)" alt="">
 				</a>
-				<img v-show="!item.link" :src="$withBase(`/${item.imageName}`)" alt="">
+				<img v-show="!item.link && tabIndex === 0" :src="$withBase(`/business/${item.imageName}`)" alt=""> {{tabIndex}}
+				<img v-show="!item.link && tabIndex === 1" :src="$withBase(`/industryCollaboration/${item.imageName}`)" alt=""> {{tabIndex}}
 			</li>
 		</ul>
 	</div>
@@ -19,12 +21,18 @@
 		props:{
 			imgList:{
 				type:Array
+			},
+			tabIndex:{
+				type:Number
 			}
 		},
 		data(){
 			return{
 				imgArr:[]
 			}
+		},
+		mounted(){
+			console.log(this.tabIndex)
 		},
 		watch:{
 			imgList(imgArray){
