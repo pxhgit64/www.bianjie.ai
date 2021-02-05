@@ -11,8 +11,8 @@
 						    v-for="(item,index) in navigationList"
 						    v-show="!item.isRight"
 						    :key="index"
-						    @click="swiperIndex(item.index)">
-							<span v-show="item.index">{{item.text}}</span>
+						    @click.self="swiperIndex(item.index)">
+							<span  @click.self="swiperIndex(item.index)" v-show="item.index">{{item.text}}</span>
 							<router-link v-show="!item.index" :to="item.link">{{item.text}}</router-link>
 							<ul v-show="item.items && item.items.length > 0" class="sub_menu">
 								<li class="sub_menu_item" v-for="v in item.items">
@@ -43,7 +43,7 @@
 				<li class="mobile_navigation_item_content"
 				    v-for="(item,index) in navigationList"
 				    :key="index"
-				    @click="mobileSwiperIndex(item.index,item)">
+				    @click.stop.self="mobileSwiperIndex(item.index,item)">
 					<span class="mobile_navigation_item_label"
 					      v-show="item.index">{{item.text}}
 						<i :class="`iconfont ${item.items && item.items.length > 0
@@ -99,6 +99,11 @@
 						this.$router.push('/')
 					}
 				}
+				const defaultPartnerActiveIndex = 0
+				const partnerSwiperIndex = 6
+				if(index !== partnerSwiperIndex) {
+					this.$store.commit('partnerActiveIndex',defaultPartnerActiveIndex)
+				}
 				this.$store.commit('swiperIndex',index)
 			},
 			mobileSwiperIndex(index,item){
@@ -110,8 +115,6 @@
 					}
 					if(item.text !== '产品' && item.text !== '应用' ) {
 						this.flShowMobileMenu = false
-					}else {
-						this.flShowMobileMenu = true
 					}
 					
 				}
@@ -119,6 +122,8 @@
 				
 			},
 			toPage(path){
+				const defaultSwiperIndex = 0
+				this.$store.commit('swiperIndex',defaultSwiperIndex)
 				this.flShowSunMenu = false
 				this.flShowMobileMenu = false
 				this.$router.push(path)
@@ -164,6 +169,7 @@
 						background $navigationImgBgColor
 						display flex
 						align-items center
+						cursor pointer
 						img{
 							padding 0.7rem 2.8rem
 							width 10.6rem
