@@ -56,7 +56,7 @@
 					// 分页器配置
 					pagination: {
 						el: '.swiper-pagination',
-						clickable: false,
+						clickable: true,
 						progressbarOpposite: true,
 					},
 					mousewheel: true,
@@ -95,7 +95,14 @@
 				this.swiper.slideTo( this.$store.state.swiperIndex ? this.$store.state.swiperIndex -1 : 0, 1000, false);
 				this.swiperObj = this.swiper
 			},)
-	
+			window.document.onkeydown = (e) => {
+				if(e.keyCode === 40){
+					this.swiper.slideNext()
+				}
+				if(e.keyCode === 38){
+					this.swiper.slidePrev()
+				}
+			}
 		},
 		methods:{
 			touchCapable() {
@@ -130,6 +137,10 @@
 				margin 0.2rem 0
 				display block
 				background $buttonColor
+			}
+			/deep/.swiper-pagination-bullet-active{
+				-webkit-tap-highlight-color: transparent
+				outline: none
 			}
 		}
 	}

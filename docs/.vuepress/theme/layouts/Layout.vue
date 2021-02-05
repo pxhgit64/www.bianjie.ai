@@ -152,6 +152,7 @@ export default {
   mounted () {
     this.$router.afterEach(() => {
       this.isSidebarOpen = false
+      window.scrollTo(0,0)
     })
   },
 

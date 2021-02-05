@@ -266,7 +266,7 @@
 						.swiper-wrapper{
 							.swiper-slide{
 								.product_swiper_content{
-									padding 2.8rem 2.4rem
+									padding 2.8rem 2rem
 									height 36.9rem
 									box-sizing border-box
 									.product_swiper_content_wrap{
@@ -274,7 +274,6 @@
 										grid-template-columns auto 24rem
 										grid-template-rows none
 										.product_swiper_left_content{
-											margin-right 2rem
 											.product_swiper_card_title{
 												font-size $fontSize16
 												font-weight $fontWeight600
