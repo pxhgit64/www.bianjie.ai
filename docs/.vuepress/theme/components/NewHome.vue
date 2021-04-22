@@ -60,7 +60,7 @@
 						progressbarOpposite: true,
 					},
 					mousewheel: true,
-					touchStartForcePreventDefault : true,
+					touchStartForcePreventDefault : false,
 					direction: 'vertical',
 					slidesPerView: 1,
 				}
