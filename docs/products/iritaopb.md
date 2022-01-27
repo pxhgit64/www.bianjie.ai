@@ -4,16 +4,16 @@
     isIritaOpb: true,
     title: IRITA OPB-核心产品,
     iritaopbTitleContent: {
-        title: 开放联盟链产品 - IRITA OPB,
-        subTitle: 符合中国监管合规要求 · 成熟公链底层技术框架 · 基于智能合约的开放联盟链产品,
+        title: 开放许可链产品 - IRITA OPB,
+        subTitle: 符合监管合规要求 · 成熟底层链技术框架 · 支持分布式商业应用的开放许可链产品,
         moreText: 了解更多
     },
     iritaopbIntroContent: {
         title: 产品简介,
         description: [
-            {paragraph: IRITA OPB 是边界智能基于 IRITA 联盟链底层技术自主研发的一个基于智能合约的开放联盟链产品。目前已在 BSN 环境中部署，命名为文昌链，是 BSN 的首批开放联盟链之一。},
-            {paragraph:  IRITA OPB 自主可控，支持 SM2 的多种国密算法，具备商业应用开发的身份管理、节点准入机制等功能；具备公网非信任环境下的跨链、跨中心系统能力；拥有数据隐私保护加密与授权共享能力；提供多样化服务接口，方便集成与二次开发。},
-            {paragraph: IRITA OPB 提供对节点部署的许可控制，满足中国市场的监管要求。采用类 BaaS 模式，为开发者提供丰富的链应用开发工具，能更好的满足中小企业以更具成本效益的方式快速开发和部署 DApp 及其他链上应用的需求。},
+            {paragraph: IRITA OPB 是边界智能基于 IRITA 联盟链底层技术框架自主研发，支持复杂分布式商业应用系统的开放许可链产品。目前已在 BSN（区块链服务网络） 环境中部署，命名为文昌链，是 BSN 的首批开放联盟链之一。},
+            {paragraph:  IRITA OPB 自主可控，支持 SM2、SM3 等多种国密算法，具备复杂分布式商业应用开发的身份管理、节点准入机制等功能；具备公网非信任环境下的跨链、跨中心系统能力；拥有数据隐私加密保护与授权共享能力；提供多样化服务接口，方便集成与二次开发。},
+            {paragraph: IRITA OPB 提供对节点部署的许可控制，满足中国市场的监管要求。采用类 BaaS 模式，为开发者提供丰富的链应用开发工具，能更好的满足中小企业以更具成本效益的方式快速开发和部署 DApp 及其他链上应用的需求，以最少成本实现业务与应用对接上链，实现效益最大化。},
         ]
     },
     featuresContent: {
@@ -54,17 +54,17 @@
             {
                 iconName: zhucezhanghao.png,
                 process: 注册账号，开通体验,
-                description: 注册账号，登入控制台开通免费体验版，正式体验并使用开放联盟链
+                description: 注册账号，登入控制台开通免费体验版，正式体验并使用开放许可链
             },
             {
                 iconName: heyuekaifa.png,
-                process: 合约及业务应用开发,
-                description: 可选择具体的合约语言进行智能合约开发，并基于自己的业务需求进行业务应用开发
+                process: 创建链上账户,
+                description: 根据操作指南开通开放许可链的链上账户，并领取/充值能量值
             },
             {
                 iconName: yingyongjieru.png,
-                process: 合约安装，应用接入,
-                description: 使用集成 SDK，连接业务端和底层链平台，部署应用并发布上链
+                process: 快速上链,
+                description: 根据业务需求，选择产品提供的具体服务功能，使用 SDK 或 API 接口进行业务对接于上链
             }
         ],
         controlText: 前往控制台
